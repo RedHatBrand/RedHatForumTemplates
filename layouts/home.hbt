@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Index</title>
+
+  <style type="text/css">
+
+    ul {
+      margin: 3em auto;
+      padding: 0;
+      max-width: 24em;
+    }
+
+    li {
+      list-style: none;
+      perspective: 1000px;
+    }
+
+    a {
+      display: block;
+      padding: .5em .75em;
+      font-family: monospace;
+      text-decoration: none;
+      background: whitesmoke;
+      margin: .5em 0;
+      color: #333;
+      border-bottom: thin solid #ddd;
+      transition: all .15s ease-in-out;
+    }
+
+    a:hover {
+      transform: scale(1.075);
+      background-color: #fafafa;
+    }
+
+  </style>
+</head>
+  <body>
+    <article>
+      <ul>
+        {{#each collections.templates}}
+          <li>
+            <a href="{{this.url}}">{{this.url}}</a>
+          </li>
+        {{/each}}
+      </ul>
+    </article>
+  </body>
+</html>

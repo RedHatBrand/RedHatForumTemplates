@@ -1,0 +1,164 @@
+@import '../../../../../node_modules/red-hat-brand-typography/scss/red-hat-typography';
+@import '../../../../../node_modules/red-hat-brand-palette/scss/red-hat-palette';
+
+html, :root { font-size: 24pt; }
+
+.headline {
+  color: $color-rh-white;
+
+  h1 {
+    border: 0;
+    padding: 0;
+    line-height: 1em;
+  }
+}
+
+.brand.sko {
+  position: relative;
+  z-index: 2;
+  width: 33.333%;
+  margin: 3em;
+}
+
+.rh-logo {
+  width: 33.333%;
+  position: absolute;
+  bottom: 3em;
+  left: 3em;
+  margin: 0;
+  transform: translateY(12.5%);
+}
+
+#content {
+  transform: translateY(-50%);
+  width: 66.667%;
+  max-width: initial;
+}
+
+.headline {
+  border: none;
+  margin: 0;
+
+  &:before { border: none }
+}
+
+.arrow {
+  background-color: $color-rh-blue;
+  width: 125%;
+  position: absolute;
+  top: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+
+  &:before {
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+  }
+}
+
+.left {
+  .arrow {
+    left: 100%;
+  }
+
+  #content {
+    left: auto;
+    right: 3em;
+    text-align: right;
+
+    .line { float: right; }
+  }
+}
+
+.right {
+  #content {
+    left: 3em;
+  }
+
+  .arrow {
+    left: 0;
+  }
+
+  .brand.sko {
+    float: right;
+  }
+
+  .rh-logo {
+    left: auto;
+    right: 3em;
+  }
+}
+
+.up, .down {
+  .arrow { left: 50%; }
+
+  .brand.sko {
+    width: 33.333%
+  }
+
+  .rh-logo {
+    width: 33.333%;
+  }
+
+  #content {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: initial;
+    width: 66.667%;
+
+    .line {
+      float: none;
+      display: inline-block;
+      white-space: nowrap;
+      margin: 0 auto;
+    }
+  }
+}
+
+.up {
+  .arrow { top: 100%; }
+
+  .rh-logo {
+    bottom: auto;
+    top: 3em;
+    transform: none;
+    left: auto;
+    right: 3em;
+  }
+
+  #content {
+    top: 66.667%;
+  }
+}
+
+.down {
+  .arrow { top: 0; }
+
+  #content {
+    top: auto;
+    bottom: 66.667%;
+  }
+
+  .rh-logo {
+    bottom: 3em;
+    top: auto;
+    transform: none;
+    left: auto;
+    right: 3em;
+  }
+
+  .brand.sko {
+    position: absolute;
+    bottom: 3em;
+    left: 3em;
+    margin: 0;
+  }
+}
+
+@media (orientation: portrait) {
+  .corner-shapes-bottom-right {
+    width: 53.333%;
+  }
+}

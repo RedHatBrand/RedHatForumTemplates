@@ -1,0 +1,34 @@
+---
+width: 210mm;
+height: 297mm;
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="<%= baseUrl %>/shared/stylesheets/main.css" />
+    <link rel="stylesheet" href="<%= baseUrl %>/templates/generic-a4/assets/stylesheets/main.css" />
+
+    <style type="text/css">
+      
+    </style>
+  </head>
+  <body
+    style="width: {{ width }}{{unit}}; height: {{ height }}{{unit}}"
+    class="{{colormode}}">
+
+    {{^ background-image }}
+    <canvas class="stats-hidden"></canvas>
+    <div class="canvas-overlay"></div>
+    {{/ background-image }}
+
+    
+
+    {{^ background-image }}
+    <script src="<%= baseUrl %>/shared/javascripts/artwork.js"></script>
+    {{/ background-image }}
+
+    <script src="//redhatbrand.github.io/RedHatTemplates/global-assets/javascripts/vendor/jquery.js"></script>
+  </body>
+</html>

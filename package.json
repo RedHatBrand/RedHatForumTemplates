@@ -1,0 +1,41 @@
+{
+  "name": "healthwise-outfit-templates",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/net-engine/healthwise-outfit-templates.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/net-engine/healthwise-outfit-templates/issues"
+  },
+  "homepage": "https://github.com/net-engine/healthwise-outfit-templates",
+  "dependencies": {
+    "event-stream": "^3.1.7",
+    "express": "^4.10.1",
+    "gulp": "^3.8.10",
+    "gulp-debug": "^1.0.1",
+    "gulp-ejs": "^1.0.0",
+    "gulp-filter": "^1.0.2",
+    "gulp-gh-pages": "^0.4.0",
+    "gulp-util": "^3.0.1",
+    "handlebars": "^2.0.0",
+    "lodash": "^2.4.1",
+    "metalsmith": "^1.0.1",
+    "metalsmith-autoprefixer": "^0.1.2",
+    "metalsmith-collections": "^0.6.0",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-sass": "^0.4.0",
+    "metalsmith-templates": "^0.6.0",
+    "q": "^1.0.1",
+    "red-hat-brand-palette": "^1.0.2",
+    "red-hat-brand-patterns": "^1.0.0",
+    "red-hat-brand-typography": "^2.0.0"
+  }
+}

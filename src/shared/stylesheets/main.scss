@@ -1,0 +1,363 @@
+@import '//red-hat-overpass-fonts.s3.amazonaws.com/overpass.css';
+
+@import '../../../node_modules/red-hat-brand-typography/scss/red-hat-typography';
+@import '../../../node_modules/red-hat-brand-palette/scss/red-hat-palette';
+
+@import 'corner-shapes';
+@import 'logo-animations';
+@import 'colors';
+@import 'artwork';
+
+body {
+  margin: 0;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  color: #444;
+}
+
+// Base Styles
+
+main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#content {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 80%;
+  z-index: 20;
+}
+
+.headline {
+  border-top-width: 0;
+  padding-top: 0.5em;
+  position: relative;
+  margin-left: -0.05em;
+  padding-right: 1.5em;
+  line-height: 1.125em;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0.05em;
+    right: 0;
+    top: 0;
+    border-top: 0.2em solid;
+  }
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+// Containers
+
+@mixin half ($pad: 2.5%) {
+  @if $pad != 'no-pad' {
+    padding: $pad;
+  }
+  width: 50%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.one-half {
+  @include half;
+}
+
+.container_one-logo {
+  width: 50%;
+}
+
+.container_two-logos {
+  width: 75%;
+  font-size: 0;
+
+  [class*="-logo-container"] {
+    @extend .one-half;
+    padding: 5%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+  }
+}
+
+.container_headline-and-event-logo {
+  width: 75%;
+
+  .event-logo-container,
+  .headline-container {
+    @extend .one-half;
+    padding: 5%;
+  }
+
+  .event-logo-container {
+    float: right;
+  }
+}
+
+.fy16 {
+  font-weight: 700;
+  line-height: 0.8em;
+  margin-left: -0.08em;
+  margin-bottom: 0;
+
+  letter-spacing: -0.025em;
+}
+
+.container_fy16-and-headline-and-event-logo {
+  width: 40%;
+
+  .event-logo-container,
+  .headline-container {
+    box-sizing: border-box;
+    padding: 5%;
+  }
+
+  .event-logo-container {
+    margin: 0;
+    width: 66.667%;
+  }
+
+  .headline {
+    margin-top: 0.3em;
+  }
+
+  .sko-logo text,
+  .sko-logo tspan,
+  .sko-logo .logomark path {
+    fill: #444 !important;
+  }
+}
+
+.for-emea-true .container_fy16-and-headline-and-event-logo .event-logo-container {
+  width: initial;
+}
+
+.full-height {
+  .artwork-shape {
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 100% !important;
+    transform: translate3d(-100%, 0, 0) skewX(-45deg) !important;
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.data-lining {
+  @extend .clearfix;
+}
+
+.data-lining .line {
+  float: left;
+  clear: both;
+  padding: 0.1em 0.15em 0.05em;
+  background-color: $color-rh-white;
+  color: lighten($color-rh-black, 20%);
+  margin: 0;
+}
+
+// Respond
+
+// Portrait
+
+// ISO
+@media all and (max-aspect-ratio: 210/297) {
+  .container_headline-and-event-logo,
+  .container_fy16-and-headline-and-event-logo {
+    width: 60%;
+
+    .one-half {
+      width: initial;
+      float: none;
+      display: block;
+    }
+  }
+
+  .corner-shapes-bottom-right {
+    width: 60%;
+  }
+}
+
+@media all and (max-aspect-ratio: 1/2) {
+  #content, #content[class*=container_] { width: 50% }
+
+  .container_fy16-and-headline-and-event-logo .event-logo-container,
+  .container_fy16-and-headline-and-event-logo .headline-container,
+  .one-half {
+    width: initial;
+    float: none;
+    display: block;
+  }
+
+  .corner-shapes-bottom-right {
+    width: 80%;
+  }
+}
+
+// Landscape
+
+// ISO
+@media all and (min-aspect-ratio: 297/210) {
+  #content.container_event-logo,
+  #content.container_fy16-and-headline-and-event-logo,
+  #content.container_headline-and-event-logo {
+    left: 10%;
+    transform: translateY(-50%);
+  }
+
+  .container_headline-and-event-logo,
+  .container_fy16-and-headline-and-event-logo {
+    width: 33.333%;
+
+    .one-half {
+      width: initial;
+      float: none;
+      display: block;
+    }
+  }
+
+  .corner-shapes-bottom-right {
+    width: 60%;
+  }
+}
+
+@media all and (min-aspect-ratio: 2/1) {
+  #content, #content[class*=container_] {
+    width: 66.667%;
+  }
+
+  .container_headline-and-event-logo .one-half {
+    @include half;
+  }
+
+  .container_headline-and-event-logo .event-logo-container {
+    float: right;
+  }
+
+  .container_fy16-and-headline-and-event-logo {
+    .event-logo-container,
+    .headline-container {
+      margin: 0;
+      box-sizing: border-box;
+      padding: 4%;
+      float: left;
+    }
+
+    .event-logo-container { width: 60%; }
+    .headline-container { width: 40%; }
+  }
+
+  .corner-shapes-bottom-right {
+    width: 40%;
+  }
+}
+
+@media all and (min-aspect-ratio: 3/1) {
+  #content, #content[class*=container_] {
+    width: 50%;
+  }
+
+  #content.container_headline-and-event-logo {
+    width: 50%;
+    left: 2.5%;
+  }
+
+  #content.container_event-logo {
+    left: 2.5%;
+    padding: 2.5%;
+  }
+
+  #content.container_fy16-and-headline-and-event-logo {
+    width: 60%;
+    left: 2.5%;
+  }
+
+  #content.container_fy16-and-headline-and-event-logo {
+    width: 60%;
+  }
+}
+
+@media all and (min-aspect-ratio: 4/1) {
+  #content.container_one-logo {
+    width: 25%;
+  }
+
+  #content {
+    width: 33.333%;
+  }
+
+  #content.container_headline-and-event-logo {
+    width: 50%;
+    left: 2.5%;
+  }
+
+  #content.container_event-logo {
+    left: 0;
+    padding: 2.5%;
+  }
+
+  #content.container_fy16-and-headline-and-event-logo {
+    width: 60%;
+    left: 0;
+
+    .headline-container {
+      width: 70%;
+
+      .fy16, .headline {
+        @include half('no-pad');
+        float: left;
+      }
+
+      .fy16 { width: 56%; }
+      .headline { width: 44%; }
+
+      .fy16 {
+        padding-right: 5%;
+      }
+    }
+
+    .event-logo-container {
+      width: 30%;
+      padding-left: 0;
+    }
+  }
+
+  .corner-shapes-bottom-right {
+    width: 70%;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    margin: 0;
+
+    .rh-logo {
+      margin: 0;
+      width: 20%;
+      right: 5%;
+      bottom: auto;
+      top: 50%;
+      transform: translateY(-40%);
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.complex-logo {
+  transition: all .5s ease;
+
+  &.line-icon {
+    transition-delay:2s;
+
+    path {
+      transition: all 1s ease .52s;
+      stroke-dasharray:100 ,10;
+      animation: ani-line-icon 2s ease  alternate;
+    }
+
+  }
+
+  .event-name {
+    transition-delay:1s;
+    animation: ani-event-name 2s ease  alternate;
+  }
+
+  .logomark {
+    animation: ani-logomark 2s ease  alternate;
+  }
+
+  .location {
+    transition-delay:1.4s;
+    animation: ani-location 2s ease  alternate;
+  }
+}
+
+@keyframes ani-logomark {
+  0%  { transform: translate(0,-5em); }
+  20% { transform: translate(0,0); }
+}
+
+@keyframes ani-line-icon {
+  0%    { stroke-dasharray: 0,100 }
+  20%   { stroke-dasharray:0,100 }
+  100%  { stroke-dasharray:100,0 }
+}
+
+@keyframes ani-event-name {
+  0%    { transform: translate(-2em,0);   opacity:0; }
+  60%   { transform: translate(-2em,0);   opacity:0; }
+  100%  { transform: translate(0,0);      opacity:1; }
+  100%  { transform: translate(0,0);      opacity:1; }
+}
+
+@keyframes ani-location {
+  0%    { transform: translate(0,1em);  opacity:0 }
+  80%   { transform: translate(0,1em);  opacity:0 }
+  100%  { transform: translate(0,0);    opacity:1 }
+}
