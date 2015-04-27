@@ -8,7 +8,7 @@ The gulp + metalsmith builder for SKO Templates
     # Setup
 
     npm install --global gulp
-    git clone git@github.com:RedHatBrand/RedHatForumTemplates .git
+    git clone git@github.com:RedHatBrand/RedHatForumTemplates.git
     cd RedHatForumTemplates 
     npm install
 
