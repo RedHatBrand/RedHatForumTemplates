@@ -4,9 +4,12 @@
 html, :root { font-size: 24pt; }
 
 #content {
-  color: white;
+  color: #FFFFFF;
+  padding: 1.5em 3em 2em 2.5em;
+//  border: solid white 6px;
   
   h1 {
-    
+    font-size: 8vw;
+    text-align: center;
   }
 }

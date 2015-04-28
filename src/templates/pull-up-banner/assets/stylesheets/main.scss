@@ -1,0 +1,36 @@
+@import '../../../../../node_modules/red-hat-brand-typography/scss/red-hat-typography';
+@import '../../../../../node_modules/red-hat-brand-palette/scss/red-hat-palette';
+
+html, :root { font-size: 24pt; }
+
+#content {
+  color: white;
+  
+  h1 {
+    line-height: 1em;
+    margin: 0;
+  }
+  
+  h3 {
+    text-align: left;
+    margin-left: 1vw;
+  }
+}
+
+h1 { font-size: 24vw; }
+
+h2 { 
+  font-size: 5vw;
+  line-height: 1.25em;
+  color: #FFFFFF;
+  text-align: left;
+  font-weight: 700;
+}
+
+h3 { font-size: 5vw; }
+
+.fy-container {
+  width: 60vw;
+  margin: auto;
+  padding-bottom: 6em;
+}

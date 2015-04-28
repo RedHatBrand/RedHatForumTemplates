@@ -3,6 +3,7 @@ var gulp               = require('gulp'),
     gutil              = require('gulp-util'),
     debug              = require('gulp-debug'),
     ejs                = require('gulp-ejs'),
+    autoprefixer = require('gulp-autoprefixer'),
     express            = require('express'),
     app                = express(),
     deploy             = require('gulp-gh-pages');
@@ -162,6 +163,15 @@ gulp.task('build', ['ejs'], function () {
 gulp.task('deploy', function () {
   return gulp.src(prod + '/**/*.*')
     .pipe(deploy());
+});
+
+gulp.task('default', function () {
+    return gulp.src('src/app.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('default', ['serve']);

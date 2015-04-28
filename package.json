@@ -37,5 +37,8 @@
     "red-hat-brand-palette": "^1.0.2",
     "red-hat-brand-patterns": "^1.0.0",
     "red-hat-brand-typography": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^2.2.0"
   }
 }
