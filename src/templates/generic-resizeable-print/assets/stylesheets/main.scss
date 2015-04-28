@@ -5,8 +5,24 @@ html, :root { font-size: 24pt; }
 
 #content {
   color: white;
+  width: 80%;
   
   h1 {
     
+  }
+  
+  #logo-forum {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+// Media Queries
+
+@media screen and (max-aspect-ratio: 2/3) {
+  // Change to landscape layout 
+  
+  .canvas-overlay {
+    background: red;
   }
 }
