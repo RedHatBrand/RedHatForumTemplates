@@ -1,12 +1,26 @@
 @import '../../../../../node_modules/red-hat-brand-typography/scss/red-hat-typography';
 @import '../../../../../node_modules/red-hat-brand-palette/scss/red-hat-palette';
 
-html, :root { font-size: 24pt; }
-
-#content {
-  color: white;
-  
+#content {  
   h1 {
-    
+    font-size: 27vw !important;
+    line-height: .6em !important;
+    white-space: nowrap;
   }
+  
+  h4 {
+    font-size: 300% !important;
+    margin-left: .8em;
+    margin-bottom: 2em;
+  }
+  
+  #logo-forum {
+    width: 50%;
+    margin-left: 0;
+    transform: none;
+  }
+}
+
+.bottom-right {
+  width: 15vmin;
 }

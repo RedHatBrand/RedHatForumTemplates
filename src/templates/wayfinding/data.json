@@ -2,11 +2,15 @@
   "data": {
     "region": "Asia Pacific",
     "year": "FY14",
+    "headline": "Headline. Tagline. Here.",
     "width": "210",
     "height": "297",
     "unit": "mm",
+    "direction": "right",
+    "message": "This way to the bar",
     "artwork-color": "r: 224, g: 91, b: 0",
     "artwork-background": "59,0,131",
     "artwork-zoom": 1
   }
 }
+ 

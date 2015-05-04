@@ -1,0 +1,68 @@
+@import '../../../../../../node_modules/red-hat-brand-typography/scss/red-hat-typography';
+@import '../../../../../../node_modules/red-hat-brand-palette/scss/red-hat-palette';
+
+#content {
+  max-width: none;
+  width: 75vmin;
+  left: 0;
+  top: 0;
+  transform: none;
+  
+  #logo-forum {
+    margin-left: 2vmin;
+    width: 30vmin;
+    text-align: left;
+  }
+}
+
+.bottom-left {
+  color: white;
+  width: auto;
+  margin-bottom: 2.5em;
+  
+  h1 {
+    font-size:250% !important;
+    margin: 1em 0 !important;
+  }
+  
+  h3 {
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+  
+  h4 {
+    font-size: 150% !important;
+    margin-bottom: 0;
+    margin-top: 2.5em;
+  }
+  
+  .company {
+    padding-left: 1.5em;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 1em;
+      height: 1em;
+      background: url(../../../../../shared/images/icon-company.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  .location {
+    padding-left: 1.5em;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 1em;
+      height: 1em;
+      background: url(../../../../../shared/images/icon-pin.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

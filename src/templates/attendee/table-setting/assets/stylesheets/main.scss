@@ -1,0 +1,27 @@
+@import '../../../../../../node_modules/red-hat-brand-typography/scss/red-hat-typography';
+@import '../../../../../../node_modules/red-hat-brand-palette/scss/red-hat-palette';
+
+#content {
+  max-width: none;
+  width: 75vmin;
+  left: 0;
+  top: 0;
+  transform: none;
+  
+  #logo-forum {
+    margin-left: 2vmin;
+    width: 30vmin;
+    text-align: left;
+  }
+}
+
+@media screen and (min-aspect-ratio: 2/3) {
+  .bottom-left {
+    width: calc(100vw - 40vmin);
+    bottom: 3vmin;
+
+    h2 {
+      font-size: 3vw !important;
+    }
+  }
+}

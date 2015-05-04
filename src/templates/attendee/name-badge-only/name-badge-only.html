@@ -1,13 +1,13 @@
 ---
-width: 426mm;
-height: 603mm;
+width: 148mm;
+height: 105mm;
 ---
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="<%= baseUrl %>/shared/stylesheets/main.css" />
-    <link rel="stylesheet" href="<%= baseUrl %>/templates/welcome-signage/assets/stylesheets/main.css" />
+    <link rel="stylesheet" href="<%= baseUrl %>/templates/attendee/lanyard/assets/stylesheets/main.css" />
 
     <style type="text/css">
       canvas { background: rgb({{ artwork-background }}); }
@@ -17,19 +17,21 @@ height: 603mm;
     <script src="//redhatbrand.github.io/RedHatTemplates/global-assets/javascripts/vendor/jquery.js"></script>
   </head>
   <body
-    style="width: 426mm; height: 603mm"
-    class="{{colormode}}">
+    style="width: 90mm; height: 140mm"
+    class="">
     
     <canvas class="stats-hidden"></canvas>
     <div class="canvas-overlay"></div>
     
     <div id="content">
-      <img id="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo.svg" />
-      <h1 class="divider-before">{{message}}</h1>
+      <p><img id="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo-mono.svg" /></p>
     </div>
     
-    <div class="bottom-right">
-      <img src="<%= baseUrl %>/shared/images/rh-logo.svg" id="logo-rh">
+    <div class="bottom-left">
+      <h1 class="name divider-after">{{attendee-name}}</h1>
+      <h4 class="position">{{attendee-position}}</h4>
+      <h3 class="company">{{attendee-company}}</h3>
+      <h3 class="location">{{attendee-location}}</h3>
     </div>
     
     <script type="text/javascript">

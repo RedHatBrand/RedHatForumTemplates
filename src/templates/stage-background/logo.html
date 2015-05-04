@@ -1,13 +1,13 @@
 ---
-width: 426mm;
-height: 603mm;
+width: 100%;
+height: 100vh;
 ---
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="<%= baseUrl %>/shared/stylesheets/main.css" />
-    <link rel="stylesheet" href="<%= baseUrl %>/templates/welcome-signage/assets/stylesheets/main.css" />
+    <link rel="stylesheet" href="<%= baseUrl %>/templates/stage-background/assets/stylesheets/main.css" />
 
     <style type="text/css">
       canvas { background: rgb({{ artwork-background }}); }
@@ -17,7 +17,7 @@ height: 603mm;
     <script src="//redhatbrand.github.io/RedHatTemplates/global-assets/javascripts/vendor/jquery.js"></script>
   </head>
   <body
-    style="width: 426mm; height: 603mm"
+    style="width: 100%; height: 100vh"
     class="{{colormode}}">
     
     <canvas class="stats-hidden"></canvas>
@@ -25,7 +25,6 @@ height: 603mm;
     
     <div id="content">
       <img id="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo.svg" />
-      <h1 class="divider-before">{{message}}</h1>
     </div>
     
     <div class="bottom-right">

@@ -1,13 +1,13 @@
 ---
-width: 426mm;
-height: 603mm;
+width: 100%;
+height: 100vh;
 ---
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="<%= baseUrl %>/shared/stylesheets/main.css" />
-    <link rel="stylesheet" href="<%= baseUrl %>/templates/welcome-signage/assets/stylesheets/main.css" />
+    <link rel="stylesheet" href="<%= baseUrl %>/templates/speaker/table-setting/assets/stylesheets/main.css" />
 
     <style type="text/css">
       canvas { background: rgb({{ artwork-background }}); }
@@ -17,15 +17,22 @@ height: 603mm;
     <script src="//redhatbrand.github.io/RedHatTemplates/global-assets/javascripts/vendor/jquery.js"></script>
   </head>
   <body
-    style="width: 426mm; height: 603mm"
-    class="{{colormode}}">
+    style="width: 100%; height: 100vh"
+    class="">
     
     <canvas class="stats-hidden"></canvas>
     <div class="canvas-overlay"></div>
     
     <div id="content">
-      <img id="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo.svg" />
-      <h1 class="divider-before">{{message}}</h1>
+      <div class="fy-container divider-after">
+        <h1>{{ year }}</h1>
+        <h3>{{ region }}</h3>
+      </div>
+      <p><img id="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo-mono.svg" /></p>
+    </div>
+    
+    <div class="bottom-left">
+      <h2>{{ headline }}</h2>
     </div>
     
     <div class="bottom-right">

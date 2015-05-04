@@ -1,13 +1,13 @@
 ---
-width: 426mm;
-height: 603mm;
+width: 56.515mm
+height: 89.027mm
 ---
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="<%= baseUrl %>/shared/stylesheets/main.css" />
-    <link rel="stylesheet" href="<%= baseUrl %>/templates/welcome-signage/assets/stylesheets/main.css" />
+    <link rel="stylesheet" href="<%= baseUrl %>/templates/attendee/key-card/assets/stylesheets/main.css" />
 
     <style type="text/css">
       canvas { background: rgb({{ artwork-background }}); }
@@ -17,15 +17,17 @@ height: 603mm;
     <script src="//redhatbrand.github.io/RedHatTemplates/global-assets/javascripts/vendor/jquery.js"></script>
   </head>
   <body
-    style="width: 426mm; height: 603mm"
-    class="{{colormode}}">
+    style="width: 56.515mm; height: 89.027mm"
+    class="">
     
     <canvas class="stats-hidden"></canvas>
     <div class="canvas-overlay"></div>
     
     <div id="content">
-      <img id="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo.svg" />
-      <h1 class="divider-before">{{message}}</h1>
+      <p><img id="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo.svg" /></p>
+      <h1>{{attendee-name}}</h1>
+      <h4>{{attendee-position}}</h4>
+      <h3>{{attendee-company}}</h3>
     </div>
     
     <div class="bottom-right">
