@@ -1,6 +1,6 @@
 ---
-width: 100%;
-height: 100vh;
+width: 148mm;
+height: 105mm;
 ---
 <!DOCTYPE html>
 <html>
@@ -13,37 +13,34 @@ height: 100vh;
       canvas { background: rgb({{ artwork-background }}); }
       .canvas-overlay { background-image: radial-gradient( ellipse closest-side at center, rgba({{ artwork-background }},0) 0%, rgba({{ artwork-background }},1) 100% ); }
     </style>
-    
+
     <script src="//redhatbrand.github.io/RedHatTemplates/global-assets/javascripts/vendor/jquery.js"></script>
   </head>
   <body
-    style="width: 100%; height: 100vh"
+    style="width: 148mm; height: 105mm"
     class="">
-    
+
     <canvas class="stats-hidden"></canvas>
     <div class="canvas-overlay"></div>
-    
+
     <div id="content">
-      <div class="fy-container divider-after">
-        <h1>{{ year }}</h1>
-        <h3>{{ region }}</h3>
-      </div>
-      <p><img id="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo-mono.svg" /></p>
+      <p><img id="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo.svg" /></p>
     </div>
-    
-    <div class="bottom-left">
-      <h2>{{ headline }}</h2>
+
+    <div class="absolute-center">
+      <h4>Thank You!</h4>
+      <h1 class="name">{{speaker-name}}</h1>
     </div>
-    
+
     <div class="bottom-right">
       <img src="<%= baseUrl %>/shared/images/rh-logo.svg" id="logo-rh">
     </div>
-    
+
     <script type="text/javascript">
       window.artworkColor = { {{ artwork-color }} };
       window.artworkZoom = {{ artwork-zoom }};
     </script>
-    
+
     <script type="text/javascript" src="<%= baseUrl %>/shared/javascripts/artwork.js"></script>
   </body>
 </html>

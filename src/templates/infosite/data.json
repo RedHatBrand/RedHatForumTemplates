@@ -1,0 +1,13 @@
+{
+  "title": "Event Microsite",
+  "template": "preview.hbt",
+  "data": {
+    "headline": "Collaborate. Accelerate. Win.",
+    "dates": "2 - 4 December 2014",
+    "location": "Macau",
+    "region": "Asia Pacific",
+    "artwork-color": "r: 224, g: 91, b: 0",
+    "artwork-background": "59,0,131",
+    "artwork-zoom": 1
+  }
+}

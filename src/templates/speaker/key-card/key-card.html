@@ -1,6 +1,6 @@
 ---
-width: 100%;
-height: 100vh;
+width: 56.515mm
+height: 89.027mm
 ---
 <!DOCTYPE html>
 <html>
@@ -17,22 +17,21 @@ height: 100vh;
     <script src="//redhatbrand.github.io/RedHatTemplates/global-assets/javascripts/vendor/jquery.js"></script>
   </head>
   <body
-    style="width: 100%; height: 100vh"
+    style="width: 56.515mm; height: 89.027mm"
     class="">
     
     <canvas class="stats-hidden"></canvas>
     <div class="canvas-overlay"></div>
     
     <div id="content">
-      <div class="fy-container divider-after">
-        <h1>{{ year }}</h1>
-        <h3>{{ region }}</h3>
-      </div>
-      <p><img id="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo-mono.svg" /></p>
+      <p><img id="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo.svg" /></p>
+      <h1 class="name">{{speaker-name}}</h1>
+      <h4 class="position">{{speaker-position}}</h4>
+      <h3 class="company">{{speaker-company}}</h3>
     </div>
     
     <div class="bottom-left">
-      <h2>{{ headline }}</h2>
+      <h3 class="speaker">SPEAKER</h3>
     </div>
     
     <div class="bottom-right">

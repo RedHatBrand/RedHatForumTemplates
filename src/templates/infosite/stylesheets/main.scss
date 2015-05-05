@@ -1,0 +1,140 @@
+@import '../../../../node_modules/red-hat-brand-palette/scss/red-hat-palette';
+@import '../../../shared/stylesheets/artwork';
+@import '../../../shared/stylesheets/colors';
+
+@import 'settings';
+
+@import 'helpers/layout_helpers',
+        'helpers/interactive_helpers',
+        'helpers/z_index_helpers';
+
+@import 'decorative/borders';
+
+@import 'layout/blocks',
+        'layout/grid',
+        'layout/positioning',
+        'layout/form_structure',
+        'layout/table';
+
+@import 'interactive/anchors',
+        'interactive/buttons',
+        'interactive/radio_buttons_and_checkboxes',
+        'interactive/selects',
+        'interactive/text_inputs',
+        'interactive/progress_and_meter',
+        'interactive/file_inputs';
+
+@import 'components/fixed_left_nav',
+        'components/menu_icon',
+        'components/tabs',
+        'components/wizard',
+        'components/modal',
+        'components/flyout_menu',
+        'components/item_card';
+
+@import 'sections/hero',
+        'sections/header',
+        'sections/nav',
+        'sections/footer',
+        'sections/general',
+        'sections/agenda',
+        'sections/faq',
+        'sections/hotel',
+        'sections/intro',
+        'sections/welcome';
+
+
+
+.complex-logo {
+  transition: all .5s ease;
+
+  &.line-icon {
+    transition-delay:2s;
+
+    path {
+      transition: all 1s ease .52s;
+      stroke-dasharray:100 ,10;
+      animation: ani-line-icon 2s ease  alternate;
+    }
+
+  }
+
+  .event-name {
+    transition-delay:1s;
+    animation: ani-event-name 2s ease  alternate;
+  }
+
+  .logomark {
+    animation: ani-logomark 2s ease  alternate;
+  }
+
+  .location {
+    transition-delay:1.4s;
+    animation: ani-location 2s ease  alternate;
+  }
+}
+
+@keyframes ani-logomark {
+  0%  { transform: translate(0,-5em); }
+  20% { transform: translate(0,0); }
+}
+
+@keyframes ani-line-icon {
+  0%    { stroke-dasharray: 0,100 }
+  20%   { stroke-dasharray:0,100 }
+  100%  { stroke-dasharray:100,0 }
+}
+
+@keyframes ani-event-name {
+  0%    { transform: translate(-2em,0);   opacity:0; }
+  60%   { transform: translate(-2em,0);   opacity:0; }
+  100%  { transform: translate(0,0);      opacity:1; }
+  100%  { transform: translate(0,0);      opacity:1; }
+}
+
+@keyframes ani-location {
+  0%    { transform: translate(0,1em);  opacity:0 }
+  80%   { transform: translate(0,1em);  opacity:0 }
+  100%  { transform: translate(0,0);    opacity:1 }
+}
+
+
+.overlay {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  margin: 0;
+  -webkit-blend-mode: multiply;
+  mix-blend-mode: multiply;
+}
+
+.red {
+  .overlay {
+    display: block;
+    background-color: #d00;
+  }
+
+  .logotext, .logotype,
+  h1, h2, h3, text, p, tspan {
+    color: #fff;
+    fill: #fff !important;
+  }
+}
+
+.silver {
+  .overlay {
+    display: block;
+    background-color: #fff;
+    opacity: .5;
+  }
+}
+
+.full-height {
+  .artwork-shape {
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 200% !important;
+  }
+}

@@ -1,0 +1,176 @@
+.hero {
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background-color: lighten($color-rh-slate, 15%);
+  padding-top: 4em;
+  padding-bottom: $line-height;
+  margin: 0;
+
+  #artwork {
+    opacity: 0.5;
+  }
+
+  .gradient {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: radial-gradient(ellipse at 50% 50%, rgba(white, 0.75) 0%, rgba(white, 0.75) 25%, rgba(white, 0.0001) 100%);
+  }
+
+  @media screen and (max-width: $breakpoint-medium) {
+    padding-top: 0;
+  }
+
+  a.top-right {
+    position: absolute;
+    top: $line-height * 1.5;
+    right: 0;
+    font-family: $font-family-input;
+    color: white;
+    max-width: 9em;
+    line-height: 1.2em;
+    padding: 1em;
+    padding-left: 2.5em;
+    margin-top: -0.5em;
+
+    &:hover {
+      background-color: rgba(white, 0.4);
+    }
+
+    &:before {
+      position: absolute;
+      left: 1em;
+      top: 1.05em;
+    }
+
+    @media screen and (max-width: $breakpoint-small) {
+      top: auto;
+      bottom: 1em;
+      font-size: 90%;
+      left: 2em;
+    }
+  }
+}
+
+h1.title {
+  margin: 1em 0 0.75em;
+  line-height: 1em;
+  max-width: 6.125em;
+  font-size: 3.75em;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: bold ;
+  @media screen and (max-width: $breakpoint-medium) {
+    font-size: 3em;
+    margin-top: 0.25em;
+  }
+
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 2em;
+    margin-top: 1.75em;
+    font-weight: bold ;
+  }
+}
+
+.rh-logo .logotext.logotype {
+  fill: white !important;
+}
+
+.silver {
+  h1.title { color: $black; }
+  .sko-logo .event-name, .sko-logo .location {
+    fill: $black !important;
+  }
+  .rh-logo .logotext.logotype {
+    fill: $black !important;
+  }
+}
+
+.event-details {
+  max-width: 25em;
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 0em;
+  display: inline-block;
+
+  h3, h4 {
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.25em;
+  }
+
+  h4 {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+    line-height: 1.25em;
+  }
+
+  .name {
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+
+  }
+
+  @media screen and (max-width: $breakpoint-small) {
+    font-size: 0.8em;
+  }
+}
+
+.register-button {
+  margin-top: 0.5em;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  line-height: 1em;
+  padding: 1em 0em;
+  width: 100%;
+  text-align:center;
+  border: 2px solid $color-primary;
+  background: $color-primary;
+
+  &:hover {
+    background: none;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+  }
+
+  &.button:hover {
+    color: $color-primary;
+  }
+
+  &.button:visited:hover {
+    color: $color-primary;
+  }
+}
+
+.red .logotype, .platinum .logotype { fill: white; }
+
+.platinum .register-button:hover {
+  color: #c00;
+  border-color: #c00;
+  background-color: #eee;
+}
+
+.red .register-button:hover{
+  color: white;
+  border-color: white;
+}
+
+.where {
+  letter-spacing: 0.2em;
+  border-top: 0.1em solid;
+  padding-top: 1em;
+}
+
+.silver .event-details h3 {
+  color: #333;
+}

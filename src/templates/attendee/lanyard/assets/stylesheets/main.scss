@@ -10,7 +10,7 @@
   
   #logo-forum {
     margin-left: 2vmin;
-    width: 30vmin;
+    width: 45vmin;
     text-align: left;
   }
 }
@@ -34,35 +34,5 @@
     font-size: 150% !important;
     margin-bottom: 0;
     margin-top: 2.5em;
-  }
-  
-  .company {
-    padding-left: 1.5em;
-    
-    &:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      width: 1em;
-      height: 1em;
-      background: url(../../../../../shared/images/icon-company.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-  }
-  
-  .location {
-    padding-left: 1.5em;
-    
-    &:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      width: 1em;
-      height: 1em;
-      background: url(../../../../../shared/images/icon-pin.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
   }
 }

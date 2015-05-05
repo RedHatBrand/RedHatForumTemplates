@@ -17,13 +17,13 @@ body {
   overflow: hidden;
 }
 
-h1 { 
+h1 {
   font-size: 24vmin !important;
   line-height: 1em !important;
-  margin: 0 !important; 
+  margin: 0 !important;
 }
 
-h2 { 
+h2 {
   font-size: 5vmin !important;
   line-height: 1.25em !important;
   color: #FFFFFF;
@@ -31,7 +31,7 @@ h2 {
   font-weight: 700 !important;
 }
 
-h3 { 
+h3 {
   font-size: 5vmin !important;
   line-height: 1em !important;
 }
@@ -69,10 +69,25 @@ main {
   z-index: 2000;
   padding: 5vmin;
   color: white;
-  
+
   #logo-forum {
     width: 100%;
     transform: scale(1.2);
+  }
+}
+
+.absolute-center {
+  color: white;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  text-align: center;
+
+  *:first-child {
+    padding-top: 0;
   }
 }
 
@@ -114,7 +129,52 @@ main {
   height: auto;
   bottom: 0;
   margin: 5vmin;
+  color: white;
+
+  * {
+    vertical-align: bottom;
+  }
 }
 
 .bottom-right { right: 0; }
 .bottom-left { left: 0; }
+
+.company {
+  position: relative;
+  padding-left: 1.5em;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background: url(../../../../../shared/images/icon-company.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.location {
+  position: relative;
+  padding-left: 1.5em;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background: url(../../../../../shared/images/icon-pin.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.speaker {
+  width: auto;
+  display: inline-block;
+  background: white;
+  color: rgb(59,0,131);
+  padding: .5em 1em .5em 1em;
+}
