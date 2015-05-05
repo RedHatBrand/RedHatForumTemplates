@@ -1,19 +1,16 @@
-@import '../../../../../node_modules/red-hat-brand-typography/scss/red-hat-typography';
-@import '../../../../../node_modules/red-hat-brand-palette/scss/red-hat-palette';
-
 #content {
   max-width: none;
   width: calc(100vw - 10vmin);
   text-align: left;
-  
+
   h3 {
     max-width: 70vw;
-    
+
     &:after {
       width: calc(100vw - 10vmin);
     }
   }
-  
+
   #logo-forum {
     margin: 0 2vmin;
     margin-top: 3vmin;
@@ -35,10 +32,10 @@ div[class*="arrow-"] {
   #content {
     text-align: left;
   }
-  
+
   .arrow-right {
     display: block;
-    
+
     &:before {
       content: '';
       position: absolute;
@@ -47,10 +44,10 @@ div[class*="arrow-"] {
       right: 10vmin;
       height: .5vmin;
       background: white;
-      transform: translate(0.05em,1.25em) rotate(45deg);
+      transform: translate(0em,1.895em) rotate(45deg);
       transform-origin: right center;
     }
-    
+
     &:after {
       content: '';
       position: absolute;
@@ -59,7 +56,7 @@ div[class*="arrow-"] {
       right: 10vmin;
       height: .5vmin;
       background: white;
-      transform: translate(-0.04em,1em) rotate(-45deg);
+      transform: translate(0em,1.82em) rotate(-45deg);
       transform-origin: right center;
     }
   }
@@ -68,19 +65,19 @@ div[class*="arrow-"] {
 .left {
   #content {
     text-align: right;
-    
+
     h3 {
       margin-left: 20vmin;
-      
+
       &:after {
         margin-left: -20vmin;
       }
     }
   }
-  
+
   .arrow-left {
     display: block;
-    
+
     &:before {
       content: '';
       position: absolute;
@@ -89,10 +86,10 @@ div[class*="arrow-"] {
       left: 0;
       height: .5vmin;
       background: white;
-      transform: translate(0em,1.025em) rotate(45deg);
+      transform: translate(0em,1.815em) rotate(45deg);
       transform-origin: left center;
     }
-    
+
     &:after {
       content: '';
       position: absolute;
@@ -101,7 +98,7 @@ div[class*="arrow-"] {
       left: 0;
       height: .5vmin;
       background: white;
-      transform: translate(0em,1.11em) rotate(-45deg);
+      transform: translate(0em,1.9em) rotate(-45deg);
       transform-origin: left center;
     }
   }

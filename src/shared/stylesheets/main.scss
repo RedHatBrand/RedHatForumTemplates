@@ -1,12 +1,12 @@
-@import '//red-hat-overpass-fonts.s3.amazonaws.com/overpass.css';
+@import "//red-hat-overpass-fonts.s3.amazonaws.com/overpass.css";
 
-@import '../../../node_modules/red-hat-brand-typography/scss/red-hat-typography';
-@import '../../../node_modules/red-hat-brand-palette/scss/red-hat-palette';
+@import "../../../node_modules/red-hat-brand-typography/scss/red-hat-typography";
+@import "../../../node_modules/red-hat-brand-palette/scss/red-hat-palette";
 
-@import 'corner-shapes';
-@import 'logo-animations';
-@import 'colors';
-@import 'artwork';
+@import "corner-shapes";
+@import "logo-animations";
+@import "colors";
+@import "artwork";
 
 html, :root { font-size: 24pt; }
 
@@ -96,7 +96,7 @@ main {
   margin-bottom: 10vmin !important;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -7.5vmin;
     left: 0;
@@ -111,7 +111,7 @@ main {
   margin-top: 10vmin !important;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: -7.5vmin;
     left: 0;
@@ -144,7 +144,7 @@ main {
   padding-left: 1.5em;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     width: 1em;
@@ -160,7 +160,7 @@ main {
   padding-left: 1.5em;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     width: 1em;
