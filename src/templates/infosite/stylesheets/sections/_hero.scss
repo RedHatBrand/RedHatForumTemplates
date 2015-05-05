@@ -1,0 +1,17 @@
+.hero {
+  margin: 0;
+  height: calc(100vh - 18em);
+  min-height: 24em;
+  max-height: 48em;
+  position: relative;
+
+  .hero-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    text-align: center;
+    color: $white;
+  }
+}

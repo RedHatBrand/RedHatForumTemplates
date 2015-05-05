@@ -28,10 +28,18 @@ height: 100vh
 </head>
 <body class="">
 
-<canvas class="stats-hidden"></canvas>
-<div class="canvas-overlay"></div>
+<header>
+  <figure class="hero">
+    <div class="hero-content">
+      <h1>{{ headline }}</h1>
+    </div>
+    <canvas class="stats-hidden"></canvas>
+    <div class="canvas-overlay"></div>
+  </figure>
+</header>
+<nav>
 
-<h1>Hello</h1>
+</nav>
 
 <script type="text/javascript">
   window.artworkColor = { {{ artwork-color }} };

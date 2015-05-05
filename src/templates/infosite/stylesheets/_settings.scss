@@ -7,7 +7,7 @@ $font-family-input:       $font-family;
 $font-family-icons:       'FontAwesome';
 $font-family-mono:        'Menlo', 'Monaco', 'Courier New', monospace;
 
-$line-height:             1.6em;
+$line-height:             1.5em;
 
 $font-size:               16px;
 
@@ -42,7 +42,6 @@ $line-height-level-six:   $line-height * 1.25;
 $margin-level-six:        $line-height * 1.25;
 
 
-
 // ## Colours
 
 $color-primary:             #c12;
@@ -53,6 +52,7 @@ $color-shade:               #576065;
 
 $color-secondary:           hsl(195,54%,55%);
 $color-secondary-light:     lighten($color-secondary, 20%);
+$color-secondary-dark:     darken($color-secondary, 20%);
 
 $black:                     hsl(0,0%,9%);
 $white:                     lighten($black, 93.5%);
@@ -101,16 +101,6 @@ $link-color-hover:              $color-primary;
 $link-color-active:             $color-primary;
 $link-color-visited:            $color-primary;
 
-$main-link-color:               $link-color;
-$main-link-color-hover:         darken($link-color, 15%);
-$main-link-color-active:        darken($link-color, 25%);
-$main-link-color-visited:       lighten($link-color, 15%);
-
-$footer-link-color:             $link-color;
-$footer-link-color-hover:       darken($link-color, 15%);
-$footer-link-color-active:      darken($link-color, 25%);
-$footer-link-color-visited:     lighten($link-color, 15%);
-
 
 // Buttons
 
@@ -146,33 +136,6 @@ $button-submit-hover-border-color:        darken($color-primary, 10%);
 
 // Inputs
 
-$input-foreground-color:        $black;
-$input-background-color:        $white;
-$input-border-color:            $gray-light;
-
-$input-hover-foreground-color:  $color-info;
-$input-hover-background-color:  $color-info-light;
-$input-hover-border-color:      $color-info;
-
-$input-focus-foreground-color:  $black;
-$input-focus-background-color:  $white;
-$input-focus-border-color:      $color-success;
-
-
-// Selects
-
-$select-foreground-color:       $black;
-$select-background-color:       $gray-lighter;
-$select-border-color:           $gray-light;
-
-$select-hover-foreground-color: $color-info;
-$select-hover-background-color: $color-info-light;
-$select-hover-border-color:     $color-info;
-
-$select-focus-foreground-color: $color-success;
-$select-focus-background-color: $color-success-light;
-$select-focus-border-color:     $color-success;
-
 
 // Breakpoints
 
@@ -183,34 +146,10 @@ $breakpoint-large:        75em;
 
 // Layout
 
-$gutter:                  $line-height * 1.5;
-$page-margin:             $line-height * 2;
-$max-width:               $breakpoint-medium;
-$center-layout:           true;
-
-
-// Stroke widths
-
-$heavy-stroke:            $line-height / 4;
-$medium-stroke:           $line-height / 8;
-$light-stroke:            0.1em;
-
-$default-border-color:    $gray-light;
-$light-border-color:      $gray-lighter;
-
 
 // Debugging
-
-$baseline-grid: false;
 
 
 // Misc
 
-$radius: .15em;
-$border-width: .125em;
 
-// Tabs
-
-$tab-border-width: $border-width;
-$tab-nav-background-color: $gray;
-$tab-border-color: darken($tab-nav-background-color, 10%);
