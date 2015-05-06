@@ -4,14 +4,39 @@
   min-height: 24em;
   max-height: 48em;
   position: relative;
+  overflow: hidden;
+  background: black;
+
+  > * {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    > * { opacity: 0.75; }
+    .hero-content {
+      opacity: 1;
+      transform: translate(-50%,-50%) translateY(0);
+      .headline { opacity: 1; }
+    }
+  }
 
   .hero-content {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) translateY(3em);
+    z-index: 100;
 
     text-align: center;
     color: $white;
+
+    .logo-forum {
+      width: 60%;
+    }
+
+    .headline {
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
   }
 }

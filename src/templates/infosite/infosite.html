@@ -31,14 +31,25 @@ height: 100vh
 <header>
   <figure class="hero">
     <div class="hero-content">
-      <h1>{{ headline }}</h1>
+      <img class="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo.svg" />
+      <h1 class="headline">{{ headline }}</h1>
     </div>
     <canvas class="stats-hidden"></canvas>
     <div class="canvas-overlay"></div>
   </figure>
 </header>
-<nav>
-
+<nav class="nav">
+  <div class="nav-content">
+    <div class="nav-logo">
+      <img class="logo-rh" src="<%= baseUrl %>/shared/images/rh-logo-black.svg">
+      <img class="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo-black.svg" />
+    </div>
+    <ul class="nav-list">
+      <li>ITEM 1</li>
+      <li class="active">ITEM 2</li>
+      <li>ITEM 3</li>
+    </ul>
+  </div>
 </nav>
 
 <script type="text/javascript">
