@@ -32,25 +32,41 @@ height: 100vh
   <figure class="hero">
     <div class="hero-content">
       <img class="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo.svg" />
-      <h1 class="headline">{{ headline }}</h1>
+      <h1 class="hero-reveal">{{ headline }}</h1>
+      <p class="hero-reveal">{{ sub-headline }}</p>
     </div>
     <canvas class="stats-hidden"></canvas>
-    <div class="canvas-overlay"></div>
+    <!-- <div class="canvas-overlay"></div> -->
   </figure>
 </header>
 <nav class="nav">
-  <div class="nav-content">
+  <div class="inner-container clearfix">
     <div class="nav-logo">
       <img class="logo-rh" src="<%= baseUrl %>/shared/images/rh-logo-black.svg">
       <img class="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo-black.svg" />
     </div>
     <ul class="nav-list">
-      <li>ITEM 1</li>
-      <li class="active">ITEM 2</li>
-      <li>ITEM 3</li>
+      <li><a href="#">ITEM 1</a></li>
+      <li><a href="#">ITEM 2</a></li>
+      <li><a href="#">ITEM 3</a></li>
     </ul>
   </div>
 </nav>
+<section class="section-intro">
+  <div class="inner-container">
+    <h1>{{ headline }}</h1>
+    {{{ intro }}}
+  </div>
+</section>
+<section class="section-agenda">
+  <div class="inner-container">
+    <h1>{{ headline }}</h1>
+    {{{ intro }}}
+  </div>
+</section>
+<footer>
+
+</footer>
 
 <script type="text/javascript">
   window.artworkColor = { {{ artwork-color }} };

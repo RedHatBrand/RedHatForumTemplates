@@ -1,0 +1,19 @@
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+
+  &:hover { color: $link-color-hover; }
+  &:active { color: $link-color-active; }
+}
+
+ul.nav-list a {
+  color: $nav-link-color;
+
+  &:hover {
+    color: $nav-link-color-hover;
+    border-bottom: 2px solid $nav-link-color-hover !important;
+  }
+
+  &:active { color: $nav-link-color-active; }
+}

@@ -5,7 +5,7 @@
   max-height: 48em;
   position: relative;
   overflow: hidden;
-  background: black;
+  background: $black;
 
   > * {
     transition: all 0.3s ease-in-out;
@@ -16,15 +16,20 @@
     .hero-content {
       opacity: 1;
       transform: translate(-50%,-50%) translateY(0);
-      .headline { opacity: 1; }
+      .hero-reveal { opacity: 1; }
     }
+  }
+
+  canvas, .canvas-overlay {
+    height: 100% !important;
+    width: 100% !important;
   }
 
   .hero-content {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%) translateY(3em);
+    transform: translate(-50%,-50%) translateY(5em);
     z-index: 100;
 
     text-align: center;
@@ -34,7 +39,7 @@
       width: 60%;
     }
 
-    .headline {
+    .hero-reveal {
       opacity: 0;
       transition: all 0.3s ease-in-out;
     }
