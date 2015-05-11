@@ -8,25 +8,27 @@
   ul {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 2em;
-    margin-bottom: 2em;
   }
 
   ul.footer-links {
     li {
-      margin: 0.5em 0;
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 0.7em;
+      margin-right: 0.5em;
+      border-right: 1px solid;
+
+      &:last-child { padding-right: 0.7em; margin-right: 0.5em; border-right: none; }
     }
   }
 
   ul.footer-social {
-    position: relative;
-    top: 50%;
-    right: 0;
+    float: right;
 
     li {
       display: inline-block;
-      width: 1.5em;
-      height: 1.5em;
+      width: 1em;
+      height: 1em;
       text-align: center;
       padding: 0 0.5em;
 
