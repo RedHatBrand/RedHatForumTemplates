@@ -1,0 +1,46 @@
+#content {
+  max-width: none;
+  width: 75vmin;
+  text-align: center; }
+  #content h3 {
+    margin-left: 1vmin; }
+
+.redhat-and-event-logo #content {
+  max-width: 40vmax; }
+  .redhat-and-event-logo #content #logo-rh {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9); }
+  .redhat-and-event-logo #content #logo-forum {
+    margin-top: 0.5rem;
+    margin-left: 0;
+    width: 100%;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+
+.fy-and-headline-and-event-logo #content {
+  width: calc(100vw - 10vmin);
+  text-align: left; }
+  .fy-and-headline-and-event-logo #content #logo-forum {
+    margin-top: 3vmin;
+    margin-left: 2vmin;
+    width: 50vmin;
+    text-align: left; }
+@media screen and (min-aspect-ratio: 2/3) {
+  .fy-and-headline-and-event-logo #content {
+    height: 80%;
+    left: 0;
+    top: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+ }
+
+@media screen and (min-aspect-ratio: 2/3) {
+  .bottom-left {
+    width: calc(100vw - 40vmin);
+    bottom: 3vmin; }
+    .bottom-left h2 {
+      font-size: 3vw !important; }
+ }

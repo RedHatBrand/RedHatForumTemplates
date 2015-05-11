@@ -1,0 +1,24 @@
+#content {
+  color: white;
+  max-width: none;
+  width: 75vmin;
+  left: 0;
+  top: 0;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none; }
+  #content #logo-forum {
+    margin-left: 2vmin;
+    width: 50vmin;
+    text-align: left; }
+  #content h1 {
+    font-size: 200% !important;
+    margin: 0.25em 0 !important; }
+  #content h4 {
+    font-size: 100% !important;
+    margin-bottom: 0.5em; }
+
+.bottom-left {
+  width: auto; }
+  .bottom-left .speaker {
+    padding: 0.7em 1em 0.5em 1em; }

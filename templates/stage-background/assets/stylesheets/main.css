@@ -1,0 +1,10 @@
+#content {
+  width: 75vmin; }
+
+@media screen and (min-aspect-ratio: 2/3) {
+  .bottom-left {
+    width: calc(100vw - 40vmin);
+    bottom: 3vmin; }
+    .bottom-left h2 {
+      font-size: 3vw !important; }
+ }

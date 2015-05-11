@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="//redhatbrand.github.io/RedHatForumTemplates/shared/stylesheets/main.css" />
+    <link rel="stylesheet" href="//redhatbrand.github.io/RedHatForumTemplates/templates/pull-up-banner/assets/stylesheets/main.css" />
+
+    <style type="text/css">
+      canvas { background: rgb({{ artwork-background }}); }
+      .canvas-overlay { background-image: radial-gradient( ellipse closest-side at center, rgba({{ artwork-background }},0) 0%, rgba({{ artwork-background }},1) 100% ); }
+    </style>
+    
+    <script src="//redhatbrand.github.io/RedHatTemplates/global-assets/javascripts/vendor/jquery.js"></script>
+  </head>
+  <body
+    style="width: 850mm; height: 2000mm"
+    class="{{colormode}}">
+    
+    <canvas class="stats-hidden"></canvas>
+    <div class="canvas-overlay"></div>
+    
+    <div id="content">
+      <p class="divider-after"><img src="//redhatbrand.github.io/RedHatForumTemplates/shared/images/rh-logo.svg" id="logo-rh"></p>
+      <img id="logo-forum" src="//redhatbrand.github.io/RedHatForumTemplates/shared/images/forum-logo.svg" />
+    </div>
+    
+    <script type="text/javascript">
+      window.artworkColor = { {{ artwork-color }} };
+      window.artworkZoom = {{ artwork-zoom }};
+    </script>
+    
+    <script type="text/javascript" src="//redhatbrand.github.io/RedHatForumTemplates/shared/javascripts/artwork.js"></script>
+  </body>
+</html>

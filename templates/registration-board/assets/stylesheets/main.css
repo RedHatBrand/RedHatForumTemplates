@@ -1,0 +1,17 @@
+#content h1 {
+  font-size: 27vw !important;
+  line-height: 0.6em !important;
+  white-space: nowrap; }
+#content h4 {
+  font-size: 150% !important;
+  margin-left: 0.8em;
+  margin-bottom: 2em; }
+#content #logo-forum {
+  width: 50%;
+  margin-left: 0;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none; }
+
+.bottom-right {
+  width: 15vmin; }

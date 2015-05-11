@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>{{ headline }}</title>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+<meta content="initial-scale=1.0" name="viewport" />
+<meta content="Red Hat" name="author" />
+<meta content="{{ meta-description }}" name="description" />
+<meta content="{{ meta-keywords }}" name="keywords" />
+<link href="//red-hat-assets.s3.amazonaws.com/assets/images/favicon.ico" rel="icon" type="image/ico" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" media="screen" rel="stylesheet" />
+<link href="//redhatbrand.github.io/RedHatForumTemplates/templates/infosite/stylesheets/main.css" media="screen" rel="stylesheet" />
+<link href="//red-hat-overpass-fonts.s3.amazonaws.com/overpass.css" rel="stylesheet" />
+<script src="//redhatbrand.github.io/RedHatTemplates/global-assets/javascripts/vendor/jquery.js"></script>
+<script src="//redhatbrand.github.io/RedHatForumTemplates/templates/infosite/javascripts/main.js"></script>
+<!--[if lt IE 9]> <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script> <![endif]-->
+
+<style type="text/css">
+  canvas { background: rgb({{ artwork-background }}); }
+  .canvas-overlay { background-image: radial-gradient( ellipse closest-side at center, rgba({{ artwork-background }},0) 0%, rgba({{ artwork-background }},1) 100% ); }
+</style>
+</head>
+<body class="">
+
+<header class="header">
+  <figure class="hero">
+    <div class="hero-content">
+      <img class="logo-forum" src="//redhatbrand.github.io/RedHatForumTemplates/shared/images/forum-logo.svg" />
+      <h1 class="hero-reveal">{{ headline }}</h1>
+      <p class="hero-reveal">{{ sub-headline }}</p>
+    </div>
+    <canvas class="stats-hidden"></canvas>
+    <!-- <div class="canvas-overlay"></div> -->
+  </figure>
+</header>
+<nav class="nav">
+  <div class="inner-container clearfix">
+    <div class="nav-logo">
+      <img class="logo-rh" src="//redhatbrand.github.io/RedHatForumTemplates/shared/images/rh-logo-black.svg">
+      <img class="logo-forum" src="//redhatbrand.github.io/RedHatForumTemplates/shared/images/forum-logo-black.svg" />
+    </div>
+    <ul class="nav-list">
+      <li><a href="#">Intro</a></li>
+      <li><a href="#">Agenda</a></li>
+      <li><a href="#">Lorem</a></li>
+    </ul>
+    <span class="nav-hamburger"></span>
+  </div>
+</nav>
+<section class="section-intro">
+  <div class="inner-container">
+    <h1>{{ headline }}</h1>
+    {{{ intro }}}
+  </div>
+</section>
+<section class="section-agenda">
+  <div class="inner-container">
+    <h1>Agenda</h1>
+    {{{ intro }}}
+  </div>
+</section>
+<footer class="footer">
+  <div class="inner-container">
+    <ul class="footer-links">
+      <li><a href="//redhat.com/about/">About Red Hat</a></li>
+      <li><a href="//redhat.com/legal/privacy_statement.html">Privacy Policy</a></li>
+      <li><a href="//redhat.com/legal/legal_statement.html">Terms of Use</a></li>
+    </ul>
+    <ul class="footer-social">
+      <li><a href="//twitter.com/red_hat_apac" target='_blank'><img src="//redhatbrand.github.io/RedHatForumTemplates/shared/images/icon-twitter.svg" alt="twitter" /></a></li>
+      <li><a href="//facebook.com/RedhatAPAC" target='_blank'><img src="//redhatbrand.github.io/RedHatForumTemplates/shared/images/icon-facebook.svg" alt="facebook" /></a></li>
+      <li><a href="//youtube.com/RedHatVideos" target='_blank'><img src="//redhatbrand.github.io/RedHatForumTemplates/shared/images/icon-youtube.svg" alt="youtube" /></a></li>
+      <li><a href="//linkedin.com/redhat" target='_blank'><img src="//redhatbrand.github.io/RedHatForumTemplates/shared/images/icon-linkedin.svg" alt="linkedin" /></a></li>
+    </ul>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  window.artworkColor = { {{ artwork-color }} };
+  window.artworkZoom = {{ artwork-zoom }};
+</script>
+
+<script type="text/javascript" src="//redhatbrand.github.io/RedHatForumTemplates/shared/javascripts/artwork.js"></script>
+
+</body>
+</html>

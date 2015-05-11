@@ -1,0 +1,14 @@
+canvas {
+  background: #3b0083;
+  z-index: -100;
+  margin: 0; }
+
+.canvas-overlay {
+  position: absolute;
+  z-index: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(ellipse closest-side at center, rgba(59, 0, 131, 0) 0%, #3b0083 100%); }

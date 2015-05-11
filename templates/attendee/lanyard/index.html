@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      background-color: lightgrey;
+      font-family: monospace;
+      text-transform: uppercase;
+    }
+    article {
+      text-align: center;
+      padding: 0.5em;
+    }
+    .preview {
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      margin: 0.5em;
+      box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+    }
+
+    label {
+      position: absolute;
+      top: 0.25em;
+      left: 0.25em;
+      line-height: 1;
+      opacity: 0;
+      transition: opacity .15s ease;
+    }
+
+    .preview:hover label { opacity: .5; }
+
+    .preview-frame { border: 0; }
+    a.home-link {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,.75);
+      padding: .75em 1em;
+      color: white;
+      text-decoration: none;
+      border-top-right-radius: 3px;
+      opacity: .25;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+    a.home-link:before {
+      content: '/';
+      margin-right: .5em;
+    }
+    a.home-link:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+  <body>
+    <article>
+      <div class='preview' style='height: 140mm;; width: 90mm;'>
+        <label>templates/attendee/lanyard/lanyard.html</label>
+        <iframe class='preview-frame' data-xml-url="//redhatbrand.github.io/RedHatForumTemplates/templates/attendee/lanyard/lanyard.html" height='100%' width='100%'></iframe>
+      </div>
+      <div id="data" data-template-data="{&quot;region&quot;:&quot;Asia Pacific&quot;,&quot;year&quot;:&quot;FY14&quot;,&quot;headline&quot;:&quot;Headline. Tagline. Here.&quot;,&quot;width&quot;:&quot;210&quot;,&quot;height&quot;:&quot;297&quot;,&quot;unit&quot;:&quot;mm&quot;,&quot;attendee-name&quot;:&quot;Beau Dankins&quot;,&quot;attendee-company&quot;:&quot;NetEngine&quot;,&quot;attendee-location&quot;:&quot;Brisbane, Australia&quot;,&quot;attendee-position&quot;:&quot;Web/UX Designer&quot;,&quot;artwork-color&quot;:&quot;r: 224, g: 91, b: 0&quot;,&quot;artwork-background&quot;:&quot;59,0,131&quot;,&quot;artwork-zoom&quot;:1}"></div>
+    </article>
+
+    <a class="home-link" href="//redhatbrand.github.io/RedHatForumTemplates/">Home</a>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script src="//redhatbrand.github.io/RedHatForumTemplates/previews.js" type="text/javascript"></script>
+  </body>
+</html>
