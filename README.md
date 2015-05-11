@@ -1,6 +1,6 @@
 # Red Hat Forum Templates
 
-The gulp + metalsmith builder for SKO Templates
+The gulp + metalsmith builder for RedHatForum Templates
 
 
 ## Development

@@ -28,7 +28,7 @@ height: 100vh
 </head>
 <body class="">
 
-<header>
+<header class="header">
   <figure class="hero">
     <div class="hero-content">
       <img class="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo.svg" />
@@ -46,10 +46,11 @@ height: 100vh
       <img class="logo-forum" src="<%= baseUrl %>/shared/images/forum-logo-black.svg" />
     </div>
     <ul class="nav-list">
-      <li><a href="#">ITEM 1</a></li>
-      <li><a href="#">ITEM 2</a></li>
-      <li><a href="#">ITEM 3</a></li>
+      <li><a href="#">Intro</a></li>
+      <li><a href="#">Agenda</a></li>
+      <li><a href="#">Lorem</a></li>
     </ul>
+    <span class="nav-hamburger"></span>
   </div>
 </nav>
 <section class="section-intro">
@@ -60,12 +61,24 @@ height: 100vh
 </section>
 <section class="section-agenda">
   <div class="inner-container">
-    <h1>{{ headline }}</h1>
+    <h1>Agenda</h1>
     {{{ intro }}}
   </div>
 </section>
-<footer>
-
+<footer class="footer">
+  <div class="inner-container">
+    <ul class="footer-links">
+      <li><a href="//redhat.com/about/">About Red Hat</a></li>
+      <li><a href="//redhat.com/legal/privacy_statement.html">Privacy Policy</a></li>
+      <li><a href="//redhat.com/legal/legal_statement.html">Terms of Use</a></li>
+    </ul>
+    <ul class="footer-social">
+      <li><a href="//twitter.com/red_hat_apac" target='_blank'><img src="<%= baseUrl %>/shared/images/icon-twitter.svg" alt="twitter" /></a></li>
+      <li><a href="//facebook.com/RedhatAPAC" target='_blank'><img src="<%= baseUrl %>/shared/images/icon-facebook.svg" alt="facebook" /></a></li>
+      <li><a href="//youtube.com/RedHatVideos" target='_blank'><img src="<%= baseUrl %>/shared/images/icon-youtube.svg" alt="youtube" /></a></li>
+      <li><a href="//linkedin.com/redhat" target='_blank'><img src="<%= baseUrl %>/shared/images/icon-linkedin.svg" alt="linkedin" /></a></li>
+    </ul>
+  </div>
 </footer>
 
 <script type="text/javascript">

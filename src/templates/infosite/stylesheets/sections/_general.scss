@@ -1,3 +1,14 @@
+@mixin selection {
+  ::-moz-selection { @content; }
+  ::selection { @content; }
+}
+
+@include selection {
+  color: white;
+  background: $color-shade;
+  text-shadow: 0;
+}
+
 body {
   margin: 0;
   font-family: $font-family;
@@ -11,6 +22,11 @@ h1 {
   text-transform: uppercase;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 section {
   padding: 4em 0;
 
@@ -20,11 +36,11 @@ section {
 }
 
 .inner-container {
-  width: 60vw;
+  width: 100vw;
+  max-width: $breakpoint-large;
   margin: 0 auto;
   padding: 0 1em;
-
-  @media screen and (max-width: $breakpoint-large) { width: 100vw }
+  box-sizing: border-box;
 }
 
 .logo-forum {

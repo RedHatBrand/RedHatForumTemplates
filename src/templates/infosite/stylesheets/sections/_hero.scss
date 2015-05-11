@@ -10,13 +10,22 @@
   > * {
     transition: all 0.3s ease-in-out;
   }
+  
+  @media screen and (min-width: $breakpoint-medium) {
+    &:hover {
+      > * { opacity: 0.75; }
+      .hero-content {
+        opacity: 1;
+        transform: translate(-50%,-50%) translateY(0);
+        .hero-reveal { opacity: 1; }
+      }
+    }
+  }
 
-  &:hover {
-    > * { opacity: 0.75; }
+  @media screen and (max-width: $breakpoint-medium) {
     .hero-content {
-      opacity: 1;
-      transform: translate(-50%,-50%) translateY(0);
-      .hero-reveal { opacity: 1; }
+      transform: translate(-50%,-50%) translateY(0) !important;
+      .hero-reveal { opacity: 1 !important; }
     }
   }
 

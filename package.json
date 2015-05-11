@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/net-engine/healthwise-outfit-templates.git"
+    "url": "https://github.com/RedHatBrand/RedHatForumTemplates.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/net-engine/healthwise-outfit-templates/issues"
+    "url": "https://github.com/RedHatBrand/RedHatForumTemplates/issues"
   },
-  "homepage": "https://github.com/net-engine/healthwise-outfit-templates",
+  "homepage": "https://github.com/RedHatBrand/RedHatForumTemplates",
   "dependencies": {
     "event-stream": "^3.1.7",
     "express": "^4.10.1",

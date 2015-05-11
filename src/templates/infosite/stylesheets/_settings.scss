@@ -1,46 +1,31 @@
 // ## Typography
 
-$font-family:             'Overpass', 'Helvetica', 'Verdana', 'Arial', sans-serif;
-$font-family-body:        $font-family;
-$font-family-headings:    $font-family;
-$font-family-input:       $font-family;
+
+$font-family:             'Overpass';
 $font-family-icons:       'FontAwesome';
 $font-family-mono:        'Menlo', 'Monaco', 'Courier New', monospace;
 
 $line-height:             1.5em;
 
-$font-size:               16px;
+$font-size:               12pt;
 
 $font-size-level-one:     3em;
 $font-weight-level-one:   300;
-$line-height-level-one:   $line-height * 0.667;
-$margin-level-one:        $line-height * 0.667;
 
 $font-size-level-two:     1.75em;
 $font-weight-level-two:   500;
-$line-height-level-two:   $line-height * 0.75;
-$margin-level-two:        $line-height * 0.75;
 
 $font-size-level-three:   1.5em;
 $font-weight-level-three: 600;
-$line-height-level-three: $line-height * 0.8;
-$margin-level-three:      $line-height * 0.8;
 
 $font-size-level-four:    1.25em;
 $font-weight-level-four:  700;
-$line-height-level-four:  $line-height * 0.8;
-$margin-level-four:       $line-height * 0.8;
 
 $font-size-level-five:    1em;
 $font-weight-level-five:  700;
-$line-height-level-five:  $line-height;
-$margin-level-five:       $line-height;
 
 $font-size-level-six:     0.8em;
 $font-weight-level-six:   700;
-$line-height-level-six:   $line-height * 1.25;
-$margin-level-six:        $line-height * 1.25;
-
 
 // ## Colours
 
@@ -52,7 +37,7 @@ $color-shade:               #576065;
 
 $color-secondary:           hsl(195,54%,55%);
 $color-secondary-light:     lighten($color-secondary, 20%);
-$color-secondary-dark:     darken($color-secondary, 20%);
+$color-secondary-dark:      darken($color-secondary, 20%);
 
 $black:                     hsl(0,0%,9%);
 $white:                     lighten($black, 93.5%);

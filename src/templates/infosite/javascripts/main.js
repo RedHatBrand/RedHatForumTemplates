@@ -1,16 +1,16 @@
 $(function() {
-  var body           = $("body");
+  var body            = $("body");
+  var heroHeight      = $(".hero").height();
 
-  var BREAKPOINTS = [200,400,600,800];
+  var BREAKPOINTS = [0, 0, 100, 200];
 
-  $(window).scroll(function (event) {
+  $(window).scroll(function (e) {
     var scroll        = $(window).scrollTop();
 
     updateNavPosition();
     updateNavActiveItem();
 
     function updateNavPosition() {
-      var heroHeight    = $(".hero").height();
       var nav           = $(".nav");
 
       if (scroll >= heroHeight) {
@@ -30,7 +30,7 @@ $(function() {
       }
 
       for (var i = BREAKPOINTS.length - 1; i >= 0; i--) {
-        var y = BREAKPOINTS[i];
+        var y = heroHeight + BREAKPOINTS[i];
 
         if (scroll >= y) {
           $("ul.nav-list li").removeClass("active");
@@ -43,6 +43,7 @@ $(function() {
 
   $("ul.nav-list li a").click(function() {
     i = $("ul.nav-list li a").index(this);
-    body.animate({ scrollTop: BREAKPOINTS[i + 1] }, 500);
+    var y = heroHeight + BREAKPOINTS[i + 1]
+    body.animate({ scrollTop: y }, 1000);
   });
 });

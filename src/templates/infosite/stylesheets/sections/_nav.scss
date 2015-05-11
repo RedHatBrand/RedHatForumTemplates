@@ -9,6 +9,7 @@
 
     .nav-logo {
       transform: none;
+      opacity: 1;
     }
   }
 
@@ -17,9 +18,10 @@
     height: 5em;
     padding: 1em 0;
     box-sizing: border-box;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
+    opacity: 0;
 
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
     img {
       padding: 0 1em;
@@ -36,11 +38,11 @@
     float: right;
     margin: 0;
     padding: 1.8em 0;
-    list-style: none;
     text-align: right;
 
     li {
       font-weight: 600;
+      text-transform: uppercase;
       display: inline-block;
       margin: 0 1em;
 
