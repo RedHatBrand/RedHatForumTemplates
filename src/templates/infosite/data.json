@@ -43,22 +43,48 @@
         {
             "start": "9:00",
             "end": "17:00",
-            "topic": "Arrivals and Conference Check-In"
+            "topic": "Learn to H@ck"
         },
         {
             "type": "break",
             "start": "17:00",
             "end": "18:00",
-            "topic": "Free and Easy"
+            "topic": "Break Time"
         },
         {
             "start": "18:00",
             "end": "19:30",
             "location": "Location TBC",
-            "topic": "Welcome Reception",
-            "speaker": "Dirk-Peter van Leeuwen"
+            "topic": "A Topical Topic",
+            "speaker": "Ed Rockwell",
+            "group": "Group 2"
         }
       ]
-    }]
+      },
+      {
+        "day-name": "Tuesday",
+        "date": "November 16, 2015",
+        "sessions": [
+        {
+          "start": "9:00",
+          "end": "17:00",
+          "topic": "Hackathon",
+          "group": "Group 1"
+        },
+        {
+          "type": "break",
+          "start": "17:00",
+          "end": "18:00",
+          "topic": "Coffee Break"
+        },
+        {
+          "start": "18:00",
+          "end": "19:30",
+          "location": "Location TBC",
+          "topic": "Title TBD",
+          "speaker": "Joe F"
+        }
+      ]
+      }]
   }
 }

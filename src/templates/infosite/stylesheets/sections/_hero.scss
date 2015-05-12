@@ -29,6 +29,10 @@
     }
   }
 
+  @media screen and (max-width: $breakpoint-small) {
+    max-height: 32em;
+  }
+
   canvas, .canvas-overlay {
     height: 100% !important;
     width: 100% !important;

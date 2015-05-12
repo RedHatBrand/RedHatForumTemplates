@@ -3,11 +3,24 @@
 
   background: $black;
   color: $white;
+
   a { color: $white; }
 
   ul {
     display: inline-block;
     vertical-align: middle;
+  }
+
+  @media screen and (max-width: $breakpoint-small) {
+    text-align: center;
+
+    ul:not(:last-child) {
+      margin-bottom: 1.5em;
+    }
+
+    ul.footer-social {
+      float: none !important;
+    }
   }
 
   ul.footer-links {

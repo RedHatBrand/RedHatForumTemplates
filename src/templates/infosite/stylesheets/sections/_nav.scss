@@ -2,18 +2,23 @@
   width: 100vw;
   background: $white;
   border-bottom: 1px solid $gray-light;
+  z-index: 2000;
 
   &.sticky-nav {
     position: fixed;
     top: 0;
 
-    .nav-logo {
+    .nav-logos {
       transform: none;
       opacity: 1;
     }
   }
 
-  .nav-logo {
+  @media screen and (max-width: $breakpoint-medium) { 
+    text-align: center;
+  }
+
+  .nav-logos {
     display: inline-block;
     height: 5em;
     padding: 1em 0;

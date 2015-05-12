@@ -87,6 +87,27 @@ section {
   transform: scale(1.15);
 }
 
+[class*="icon-"] {
+  position: relative;
+  padding-left: 1.5em;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.icon-location { &:before { background-image: url(../../../../../shared/images/icon-pin-black.svg); } }
+
+.icon-speaker { &:before { background-image: url(../../../../../shared/images/icon-speaker.svg); } }
+
+.icon-group { &:before { background-image: url(../../../../../shared/images/icon-group.svg); } }
+
 .clearfix {
   overflow: auto;
 }

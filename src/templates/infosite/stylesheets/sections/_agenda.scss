@@ -1,23 +1,33 @@
 .agenda {
   text-align: center;
 
-  .agenda-container-day {
-    display: inline-block;
-    margin-bottom: 2em;
+  .agenda-container-days {
+    display: table;
+    margin: 0 auto 2em auto;
+    width: 100%;
     text-align: center;
     border: 2px solid $black;
+    max-width: 36em;
+
+    .agenda-tab-day {
+      display: table-cell;
+      width: auto;
+
+      h5 { @media screen and (max-width: $breakpoint-medium) { 
+        font-size: 10pt;
+      } }
+    }
 
     input.agenda-input-day {
       display: none;
       
       + label h5 {
-        display: inline-block;
-        width: auto;
         height: 1em;
-        padding: 1em 2em;
+        padding: 1.5em 0;
         margin-bottom: 0;
         color: $black;
         background: none;
+        cursor: pointer;
       }
 
       &:checked {
@@ -29,7 +39,40 @@
     }
   }
 
-  .agenda-container-sessions {
+  .agenda-container-session {
+    text-align: left;
     
+    .agenda-session {
+      position: relative;
+      padding: 1em 1.5em;
+      margin: 1em 0;
+      opacity: 0;
+      background: $white;
+      border-left: 3em solid $color-primary;
+      box-shadow: inset 0px -2px 0px $gray-light;
+
+      &:before {
+        content: attr(data-start);
+        position: absolute;
+        top: 50%;
+        left: -2.4em;
+        color: $white;
+        transform: translateY(-50%) rotate(-90deg);
+      }
+
+      &.break {
+        background: $white;
+        border-left-color: $gray-light;
+        box-shadow: inset 0px -2px 0px $gray-light;
+        &:before { color: $black; }
+      }
+    }
+
+    .agenda-session-content h5 {
+      display: inline-block;
+      margin-right: 1.5em;
+
+      &:last-child { margin-bottom: 0; }
+    }
   }
 }
