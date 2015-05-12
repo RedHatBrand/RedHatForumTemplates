@@ -179,6 +179,27 @@ section {
       .nav ul.nav-list {
         display: none; } }
 
+.agenda {
+  text-align: center; }
+  .agenda .agenda-container-day {
+    display: inline-block;
+    margin-bottom: 2em;
+    text-align: center;
+    border: 2px solid #171717; }
+    .agenda .agenda-container-day input.agenda-input-day {
+      display: none; }
+      .agenda .agenda-container-day input.agenda-input-day + label h5 {
+        display: inline-block;
+        width: auto;
+        height: 1em;
+        padding: 1em 2em;
+        margin-bottom: 0;
+        color: #171717;
+        background: none; }
+      .agenda .agenda-container-day input.agenda-input-day:checked + label h5 {
+        color: white;
+        background: #171717; }
+
 .footer {
   padding: 2em 0;
   background: #171717;
