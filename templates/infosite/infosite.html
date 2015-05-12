@@ -10,7 +10,6 @@
 <meta content="{{ meta-description }}" name="description" />
 <meta content="{{ meta-keywords }}" name="keywords" />
 <link href="//red-hat-assets.s3.amazonaws.com/assets/images/favicon.ico" rel="icon" type="image/ico" />
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" media="screen" rel="stylesheet" />
 <link href="//redhatbrand.github.io/RedHatForumTemplates/templates/infosite/stylesheets/main.css" media="screen" rel="stylesheet" />
 <link href="//red-hat-overpass-fonts.s3.amazonaws.com/overpass.css" rel="stylesheet" />
 <script src="//redhatbrand.github.io/RedHatTemplates/global-assets/javascripts/vendor/jquery.js"></script>
@@ -37,14 +36,13 @@
 </header>
 <nav class="nav">
   <div class="inner-container clearfix">
-    <div class="nav-logo">
+    <div class="nav-logos">
       <img class="logo-rh" src="//redhatbrand.github.io/RedHatForumTemplates/shared/images/rh-logo-black.svg">
       <img class="logo-forum" src="//redhatbrand.github.io/RedHatForumTemplates/shared/images/forum-logo-black.svg" />
     </div>
     <ul class="nav-list">
       <li><a href="#">Intro</a></li>
       <li><a href="#">Agenda</a></li>
-      <li><a href="#">Lorem</a></li>
     </ul>
     <span class="nav-hamburger"></span>
   </div>
@@ -59,17 +57,42 @@
   <div class="inner-container">
     <div class="agenda">
       <h1>Agenda</h1>
-      <div class="agenda-container-day">
+      <div class="agenda-container-days">
         {{#days}}
+        <div class="agenda-tab-day">
           <input class="agenda-input-day" id='{{ day-name }}' name='active-day' type='radio'>
           <label for='{{ day-name }}'>
             <h5>{{ day-name }}</h5>
           </label>
+        </div>
         {{/days}}
       </div>
-      <div class="agenda-container-sessions">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident officia eius ipsam quaerat, quia saepe quibusdam assumenda magnam non numquam suscipit rem dignissimos inventore repellat! Quod repudiandae dolorum atque architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, qui repellendus ab aliquam accusantium, necessitatibus, officia rerum nostrum, fugiat minus itaque vel sint laborum odit et amet est aliquid quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic suscipit ipsum libero voluptas animi? Eius cum eaque culpa, veniam commodi architecto doloremque pariatur laudantium nobis est necessitatibus ducimus dolore mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore suscipit assumenda ipsum repudiandae inventore temporibus blanditiis, eaque officiis, quo voluptates ut aperiam doloremque veniam fugiat dolores id enim recusandae ab!</p>
+      {{#days}}
+      <div class="agenda-container-session" id="agenda-session-{{ day-name }}">
+        {{#sessions}}
+        {{#start}}
+        <div class="agenda-session {{ type }}" data-start="{{ start }}" data-end="{{ end }}">
+          <div class="agenda-session-header">
+            {{#topic}}
+            <h3 class="agenda-session-header-text">{{ topic }}</h3>
+            {{/topic}}
+          </div>
+          <div class="agenda-session-content">
+            {{#location}}
+            <h5 class="agenda-session-content-location icon-location">{{ location }}</p>
+            {{/location}}
+            {{#speaker}}
+            <h5 class="agenda-session-header-speaker icon-speaker">{{ speaker }}</h3>
+              {{/speaker}}
+            {{#group}}
+            <h5 class="agenda-session-content-group icon-group">{{ group }}</p>
+            {{/group}}
+          </div>
+        </div>
+        {{/start}}
+        {{/sessions}}
       </div>
+      {{/days}}
     </div>
   </div>
 </section>
