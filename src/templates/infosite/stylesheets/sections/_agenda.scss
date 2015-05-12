@@ -1,0 +1,35 @@
+.agenda {
+  text-align: center;
+
+  .agenda-container-day {
+    display: inline-block;
+    margin-bottom: 2em;
+    text-align: center;
+    border: 2px solid $black;
+
+    input.agenda-input-day {
+      display: none;
+      
+      + label h5 {
+        display: inline-block;
+        width: auto;
+        height: 1em;
+        padding: 1em 2em;
+        margin-bottom: 0;
+        color: $black;
+        background: none;
+      }
+
+      &:checked {
+        + label h5 { 
+          color: $white; 
+          background: $black;
+        }
+      }
+    }
+  }
+
+  .agenda-container-sessions {
+    
+  }
+}

@@ -10,6 +10,55 @@
     "region": "Asia Pacific",
     "artwork-color": "r: 224, g: 91, b: 0",
     "artwork-background": "59,0,131",
-    "artwork-zoom": 1
+    "artwork-zoom": 1,
+    "days": [
+    {
+      "day-name": "Sunday",
+      "date": "November 14, 2015",
+      "sessions": [
+        {
+            "start": "9:00",
+            "end": "17:00",
+            "topic": "Arrivals and Conference Check-In"
+        },
+        {
+            "type": "break",
+            "start": "17:00",
+            "end": "18:00",
+            "topic": "Free and Easy"
+        },
+        {
+            "start": "18:00",
+            "end": "19:30",
+            "location": "Location TBC",
+            "topic": "Welcome Reception",
+            "speaker": "Dirk-Peter van Leeuwen"
+        }
+      ]
+    },
+    {
+      "day-name": "Monday",
+      "date": "November 15, 2015",
+      "sessions": [
+        {
+            "start": "9:00",
+            "end": "17:00",
+            "topic": "Arrivals and Conference Check-In"
+        },
+        {
+            "type": "break",
+            "start": "17:00",
+            "end": "18:00",
+            "topic": "Free and Easy"
+        },
+        {
+            "start": "18:00",
+            "end": "19:30",
+            "location": "Location TBC",
+            "topic": "Welcome Reception",
+            "speaker": "Dirk-Peter van Leeuwen"
+        }
+      ]
+    }]
   }
 }

@@ -61,12 +61,20 @@ height: 100vh
 </section>
 <section class="section-agenda">
   <div class="inner-container">
-    <h1>Agenda</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
+    <div class="agenda">
+      <h1>Agenda</h1>
+      <div class="agenda-container-day">
+        {{#days}}
+          <input class="agenda-input-day" id='{{ day-name }}' name='active-day' type='radio'>
+          <label for='{{ day-name }}'>
+            <h5>{{ day-name }}</h5>
+          </label>
+        {{/days}}
+      </div>
+      <div class="agenda-container-sessions">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident officia eius ipsam quaerat, quia saepe quibusdam assumenda magnam non numquam suscipit rem dignissimos inventore repellat! Quod repudiandae dolorum atque architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, qui repellendus ab aliquam accusantium, necessitatibus, officia rerum nostrum, fugiat minus itaque vel sint laborum odit et amet est aliquid quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic suscipit ipsum libero voluptas animi? Eius cum eaque culpa, veniam commodi architecto doloremque pariatur laudantium nobis est necessitatibus ducimus dolore mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore suscipit assumenda ipsum repudiandae inventore temporibus blanditiis, eaque officiis, quo voluptates ut aperiam doloremque veniam fugiat dolores id enim recusandae ab!</p>
+      </div>
+    </div>
   </div>
 </section>
 <footer class="footer">
