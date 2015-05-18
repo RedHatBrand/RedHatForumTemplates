@@ -68,6 +68,9 @@ ul {
 }
 
 section {
+  background-position: center !important;
+  background-size: cover !important;
+
   .inner-container { padding-top: 4em; padding-bottom: 4em; }
 
   &:nth-child(2n) { background: $gray-lighter; }
