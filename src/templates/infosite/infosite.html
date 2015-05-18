@@ -46,7 +46,10 @@ height: 100vh
     </div>
     <ul class="nav-list">
       <li><a href="#">Intro</a></li>
-      <li><a href="#">Agenda</a></li>
+      <li data-slug="agenda"><a href="#">Agenda</a></li>
+      {{#section}}
+      <li data-slug="{{slug}}"><a href="#">{{name}}</a></li>
+      {{/section}}
     </ul>
     <span class="nav-hamburger"></span>
   </div>
@@ -100,6 +103,13 @@ height: 100vh
     </div>
   </div>
 </section>
+{{#section}}
+<section style="background-image: url('{{{ section-background-image }}}')" class='section-{{slug}} section-module {{ section-theme }}'>
+  <div class='inner-container'>
+    {{{ content }}}
+  </div>
+</section>
+{{/section}}
 <footer class="footer">
   <div class="inner-container">
     <ul class="footer-links">
