@@ -7,9 +7,19 @@ $(function() {
 
   updateBreakpoints = function() { 
     var heroHeight             = hero.height();
-    var agendaTop              = sectionTop(".section-agenda");
+    var agendaTop              = sectionTop($(".section-agenda"));
 
-    BREAKPOINTS = [heroHeight, heroHeight, agendaTop];
+    BREAKPOINTS = [heroHeight, heroHeight];
+
+    $("ul.nav-list li").each(function() {
+      if ($("ul.nav-list li").index(this) != 0){
+        console.log(".section-"+$(this).data("slug"));
+        var sectionItem = ".section-"+$(this).data("slug");
+        var sectionItemTop = sectionTop(sectionItem);
+
+        BREAKPOINTS.push(sectionItemTop);
+      }
+    });
   }
 
   updateBreakpoints();
