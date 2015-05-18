@@ -1,3 +1,255 @@
+* {
+  margin: 0; }
+
+* + * {
+  margin-top: 1.5rem;
+  margin-bottom: 0; }
+  * + *:first-child {
+    margin-top: 0; }
+
+hr {
+  background: none;
+  border: none;
+  border-bottom: thin solid; }
+
+html, :root {
+  text-rendering: geometricPrecision;
+  font-size: 100%;
+  font-family: 'Overpass', sans-serif;
+  line-height: 1.5rem;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Overpass', sans-serif; }
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: 0.025em;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase; }
+  h1 + h1, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6 {
+    margin-top: 0; }
+
+h2 {
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 2.25rem;
+  letter-spacing: 0.05em;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase; }
+  h2 + h1, h2 + h2, h2 + h3, h2 + h4, h2 + h5, h2 + h6 {
+    margin-top: 0; }
+
+h3 {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: normal;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase; }
+  h3 + h1, h3 + h2, h3 + h3, h3 + h4, h3 + h5, h3 + h6 {
+    margin-top: 0; }
+
+h4 {
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: normal;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase; }
+  h4 + h1, h4 + h2, h4 + h3, h4 + h4, h4 + h5, h4 + h6 {
+    margin-top: 0; }
+
+h5 {
+  font-size: 0.667em;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: normal;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase; }
+  h5 + h1, h5 + h2, h5 + h3, h5 + h4, h5 + h5, h5 + h6 {
+    margin-top: 0; }
+
+h6 {
+  font-size: 0.5em;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: normal;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase; }
+  h6 + h1, h6 + h2, h6 + h3, h6 + h4, h6 + h5, h6 + h6 {
+    margin-top: 0; }
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0; }
+
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
+  margin-bottom: 0; }
+
+em, cite, i {
+  font-style: italic; }
+
+b, strong {
+  font-weight: 700; }
+
+small {
+  font-size: 0.8em; }
+
+s {
+  font-style: strike-through; }
+
+u {
+  text-decoration: underline; }
+
+q:before {
+  content: '\0022'; }
+q:after {
+  content: '\0022'; }
+
+abbr {
+  cursor: help;
+  border-bottom: 1px dotted; }
+
+sub {
+  font-size: 0.8em;
+  position: relative;
+  bottom: -0.25rem; }
+
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.375rem; }
+
+mark {
+  background-color: yellow; }
+
+ins {
+  background-color: lightgreen;
+  text-decoration: none; }
+
+del {
+  background-color: lightcoral; }
+
+mark, ins, del {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  padding-top: 0.25em;
+  padding-bottom: 0.05em; }
+
+blockquote {
+  font-size: 1.5em;
+  line-height: 2.25rem;
+  font-weight: 300;
+  font-style: italic; }
+  blockquote:before {
+    content: '\0022'; }
+  blockquote:after {
+    content: '\0022'; }
+
+blockquote + cite {
+  display: block;
+  margin-top: 0.75rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700; }
+  blockquote + cite small {
+    font-weight: 300; }
+
+ul, ol {
+  padding: 0; }
+
+menu {
+  list-style: none; }
+
+ol li, ul li {
+  list-style: none;
+  display: block;
+  position: relative;
+  padding-left: 1.5em; }
+  ol li:before, ul li:before {
+    position: absolute;
+    left: 0;
+    line-height: 1.5rem;
+    top: -0.08em;
+    width: 1em;
+    font-weight: bold; }
+ol ol li:before, ul ol li:before {
+  top: 0; }
+ol li + li, ul li + li {
+  margin-top: 0.75rem; }
+
+ul li:before {
+  content: "\2022"; }
+
+ul ul li:before {
+  content: '\2013'; }
+
+ul ul ul li:before {
+  content: '\00B7'; }
+
+ol {
+  list-style: decimal;
+  counter-reset: toplevel; }
+  ol li:before {
+    content: counter(toplevel) ". ";
+    counter-increment: toplevel; }
+  ol ol {
+    counter-reset: secondlevel; }
+  ol ol li:before {
+    font-weight: normal;
+    content: counter(secondlevel) ". ";
+    counter-increment: secondlevel; }
+  ol ol ol {
+    counter-reset: thirdlevel; }
+  ol ol ol li:before {
+    content: counter(thirdlevel) ". ";
+    counter-increment: thirdlevel; }
+
+dl dt {
+  font-weight: 700; }
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  margin: 0 0 1.5rem;
+  border: thin solid; }
+  table caption, table th, table td {
+    vertical-align: top;
+    padding: 0.75rem; }
+  table caption {
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase; }
+  table th {
+    font-weight: 700; }
+  table thead tr {
+    background-color: whitesmoke; }
+  table tbody tr {
+    border-top: thin solid; }
+    table tbody tr th {
+      font-weight: 700; }
+  table tfoot {
+    color: lightgrey; }
+    table tfoot tr {
+      border-top: thin solid; }
+
+pre, code, var, samp, kbd {
+  font-family: 'Dejavu Mono', monospace; }
+
+pre {
+  padding: 0.75rem;
+  color: white;
+  background-color: dimgrey; }
+
 #content {
   max-width: none;
   width: 75vmin;
@@ -33,7 +285,7 @@
       left: 0;
       width: 1em;
       height: 1em;
-      background: url(../../../../../shared/images/icon-company.svg);
+      background: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"> <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch --> <title>Fill 213</title> <desc>Created with Sketch.</desc> <defs></defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-873.000000, -413.000000)" fill="#FFFFFF"> <path d="M889,465 C874.154,465 873,471.12 873,473 L873,497 C873,498.34 873.668,499.59 874.781,500.33 L879.208,503.28 L881.02,521.4 C881.225,523.44 882.945,525 885,525 L893,525 C895.055,525 896.775,523.44 896.98,521.4 L898.792,503.28 L903.219,500.33 C904.332,499.59 905,498.34 905,497 L905,473 C905,471.12 903.846,465 889,465 L889,465 L889,465 L889,465 Z M901,441 L901,447 C901,453.63 895.628,459 889,459 C882.372,459 877,453.63 877,447 L877,441 C877,434.37 882.372,429 889,429 C895.628,429 901,434.37 901,441 C901,441 901,434.37 901,441 L901,441 L901,441 Z M985,465 C970.154,465 969,471.12 969,473 L969,497 C969,498.34 969.668,499.59 970.781,500.33 L975.208,503.28 L977.02,521.4 C977.225,523.44 978.945,525 981,525 L989,525 C991.055,525 992.775,523.44 992.98,521.4 L994.792,503.28 L999.219,500.33 C1000.332,499.59 1001,498.34 1001,497 L1001,473 C1001,471.12 999.846,465 985,465 L985,465 L985,465 L985,465 Z M997,441 L997,447 C997,453.63 991.628,459 985,459 C978.372,459 973,453.63 973,447 L973,441 C973,434.37 978.372,429 985,429 C991.628,429 997,434.37 997,441 C997,441 997,434.37 997,441 L997,441 L997,441 Z M959.828,470.17 C959.454,469.8 950.502,461 937,461 C923.498,461 914.546,469.8 914.172,470.17 C913.422,470.92 913,471.94 913,473 L913,505 C913,506.52 913.855,507.9 915.211,508.58 L921.337,511.64 L925.04,537.57 C925.322,539.54 927.01,541 929,541 L945,541 C946.99,541 948.678,539.54 948.96,537.57 L952.663,511.64 L958.789,508.58 C960.145,507.9 961,506.52 961,505 L961,473 C961,471.94 960.578,470.92 959.828,470.17 C959.828,470.17 960.578,470.92 959.828,470.17 L959.828,470.17 L959.828,470.17 Z M953,429 L953,437 C953,445.84 945.837,453 937,453 C928.163,453 921,445.84 921,437 L921,429 C921,420.16 928.163,413 937,413 C945.837,413 953,420.16 953,429 L953,429 Z" id="Fill-213" sketch:type="MSShapeGroup"></path> </g> </g> </svg>');
       background-size: contain;
       background-repeat: no-repeat; }
   .bottom-left .location {
@@ -44,6 +296,6 @@
       left: 0;
       width: 1em;
       height: 1em;
-      background: url(../../../../../shared/images/icon-pin.svg);
+      background: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg width="96px" height="128px" viewBox="0 0 96 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"> <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch --> <title>Fill 35</title> <desc>Created with Sketch.</desc> <defs></defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-589.000000, -413.000000)" fill="#FFFFFF"> <path d="M637,485 C650.25,485 661,474.255 661,461 C661,447.746 650.25,437 637,437 C623.75,437 613,447.746 613,461 C613,474.255 623.75,485 637,485 C637,485 623.75,485 637,485 L637,485 L637,485 Z M685,461 C685,495.913 644.38,536.928 642.66,538.657 C641.09,540.219 639.05,541 637,541 C634.95,541 632.91,540.219 631.34,538.657 C629.61,536.928 589,495.913 589,461 C589,434.533 610.53,413 637,413 C663.47,413 685,434.533 685,461 L685,461 Z" id="Fill-35" sketch:type="MSShapeGroup"></path> </g> </g> </svg>');
       background-size: contain;
       background-repeat: no-repeat; }
