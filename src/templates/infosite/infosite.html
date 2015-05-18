@@ -90,7 +90,7 @@ height: 100vh
             {{/location}}
             {{#speaker}}
             <h5 class="agenda-session-header-speaker icon-speaker">{{ speaker }}</h3>
-              {{/speaker}}
+            {{/speaker}}
             {{#group}}
             <h5 class="agenda-session-content-group icon-group">{{ group }}</p>
             {{/group}}
@@ -118,10 +118,10 @@ height: 100vh
       <li><a href="//redhat.com/legal/legal_statement.html">Terms of Use</a></li>
     </ul>
     <ul class="footer-social">
-      <li><a href="//twitter.com/red_hat_apac" target='_blank'><img src="<%= baseUrl %>/shared/images/icon-twitter.svg" alt="twitter" /></a></li>
-      <li><a href="//facebook.com/RedhatAPAC" target='_blank'><img src="<%= baseUrl %>/shared/images/icon-facebook.svg" alt="facebook" /></a></li>
-      <li><a href="//youtube.com/RedHatVideos" target='_blank'><img src="<%= baseUrl %>/shared/images/icon-youtube.svg" alt="youtube" /></a></li>
-      <li><a href="//linkedin.com/redhat" target='_blank'><img src="<%= baseUrl %>/shared/images/icon-linkedin.svg" alt="linkedin" /></a></li>
+      <li><a href="//twitter.com/{{username-twitter}}" target='_blank'><img src="<%= baseUrl %>/shared/images/icon-twitter.svg" alt="twitter" /></a></li>
+      <li><a href="//facebook.com/{{username-facebook}}" target='_blank'><img src="<%= baseUrl %>/shared/images/icon-facebook.svg" alt="facebook" /></a></li>
+      <li><a href="//youtube.com/{{username-youtube}}" target='_blank'><img src="<%= baseUrl %>/shared/images/icon-youtube.svg" alt="youtube" /></a></li>
+      <li><a href="//linkedin.com/{{username-linkedin}}" target='_blank'><img src="<%= baseUrl %>/shared/images/icon-linkedin.svg" alt="linkedin" /></a></li>
     </ul>
   </div>
 </footer>
