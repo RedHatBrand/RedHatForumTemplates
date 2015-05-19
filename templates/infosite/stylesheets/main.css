@@ -266,8 +266,6 @@ section {
     .agenda .agenda-container-session .agenda-session-content h5 {
       display: inline-block;
       margin-right: 1.5em; }
-      .agenda .agenda-container-session .agenda-session-content h5:last-child {
-        margin-bottom: 0; }
 
 section.section-module.custom-background .inner-container {
   color: white;
