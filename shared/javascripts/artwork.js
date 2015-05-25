@@ -33,22 +33,8 @@
         time = 0,
         firstFrame = true;
 
-    var width = document.body.clientWidth,
-        height = document.body.clientHeight;
-
-    var mq = window.matchMedia( "print" );
-
-    function WidthChange(mq) {
-
-      if (mq.matches) {
-        width = document.body.clientWidth * 4.16666667;
+    var width = document.body.clientWidth * 4.16666667,
         height = document.body.clientHeight * 4.16666667;
-        document.body.style.display = "none";
-      }
-      else {
-        // not print
-      }
-    }
 
     console.log("Width:"+width+", Height:"+height)
 
