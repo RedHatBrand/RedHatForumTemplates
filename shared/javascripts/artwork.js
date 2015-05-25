@@ -38,10 +38,16 @@
 
     var mq = window.matchMedia( "print" );
 
-    if (mq.matches) {
-      width *= 4.16666667;
-      height *= 4.16666667;
-      document.body.style.display = "none"
+    function WidthChange(mq) {
+
+      if (mq.matches) {
+        width = document.body.clientWidth * 4.16666667;
+        height = document.body.clientHeight * 4.16666667;
+        document.body.style.display = "none";
+      }
+      else {
+        // not print
+      }
     }
 
     console.log("Width:"+width+", Height:"+height)
