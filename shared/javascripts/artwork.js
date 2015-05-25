@@ -33,7 +33,7 @@
         time = 0,
         firstFrame = true;
 
-    var width = document.body.clientWidth * 4.16666667 * 4.16666667,
+    var width = document.body.clientWidth * 4.16666667,
         height = document.body.clientHeight * 4.16666667;
 
     console.log("Width:"+width+", Height:"+height)
