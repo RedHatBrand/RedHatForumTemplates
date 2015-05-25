@@ -33,7 +33,7 @@
         time = 0,
         firstFrame = true;
 
-    var width = document.body.clientWidth * 4.16666667,
+    var width = document.body.clientWidth * 4.16666667 * 4.16666667,
         height = document.body.clientHeight * 4.16666667;
 
     console.log("Width:"+width+", Height:"+height)
@@ -234,8 +234,8 @@
 
     function layout() {
 
-      width = document.body.clientWidth;
-      height = document.body.clientHeight;
+      width = document.body.clientWidth * 4.16666667;
+      height = document.body.clientHeight * 4.16666667;
 
       if( SIMPLIFIED ) {
         canvas.style.width = width + 'px';
