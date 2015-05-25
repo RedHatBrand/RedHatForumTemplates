@@ -41,11 +41,10 @@
     if (mq.matches) {
       width *= 4.16666667;
       height *= 4.16666667;
+      document.body.style.display = "none"
     }
 
-    var canvasSize = document.createElement("div");
-    canvasSize.style.zIndex = 9000;
-    canvasSize.innerHTML = "Width: "+width+", Height: "+height;
+    console.log("Width:"+width+", Height:"+height)
 
     var lines = [];
 
