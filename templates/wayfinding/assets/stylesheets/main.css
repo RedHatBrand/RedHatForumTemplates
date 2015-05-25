@@ -268,9 +268,9 @@ div[class*="arrow-"] {
   display: none;
   position: absolute;
   opacity: 1;
-  margin-top: -2.6em;
-  width: 100%;
-  height: 4em; }
+  margin-top: -3vmin;
+  width: calc(100% - 10vmin);
+  height: 0.5vmin; }
 
 .right #content {
   text-align: left; }
@@ -281,29 +281,29 @@ div[class*="arrow-"] {
     position: absolute;
     width: 10%;
     top: 0;
-    right: 10vmin;
+    right: -0.25vmin;
     height: 0.5vmin;
     background: white;
-    -webkit-transform: translate(0em, 1.895em) rotate(45deg);
-    -ms-transform: translate(0em, 1.895em) rotate(45deg);
-    transform: translate(0em, 1.895em) rotate(45deg);
-    -webkit-transform-origin: right center;
-    -ms-transform-origin: right center;
-    transform-origin: right center; }
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 98% 100%;
+    -ms-transform-origin: 98% 100%;
+    transform-origin: 98% 100%; }
   .right .arrow-right:after {
     content: '';
     position: absolute;
     width: 10%;
     top: 0;
-    right: 10vmin;
+    right: -0.25vmin;
     height: 0.5vmin;
     background: white;
-    -webkit-transform: translate(0em, 1.82em) rotate(-45deg);
-    -ms-transform: translate(0em, 1.82em) rotate(-45deg);
-    transform: translate(0em, 1.82em) rotate(-45deg);
-    -webkit-transform-origin: right center;
-    -ms-transform-origin: right center;
-    transform-origin: right center; }
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 98% 0%;
+    -ms-transform-origin: 98% 0%;
+    transform-origin: 98% 0%; }
 
 .left #content {
   text-align: right; }
@@ -312,7 +312,9 @@ div[class*="arrow-"] {
     .left #content h3:after {
       margin-left: -20vmin; }
 .left .arrow-left {
-  display: block; }
+  display: block;
+  height: 0.5vmin;
+  margin-top: -3vmin; }
   .left .arrow-left:before {
     content: '';
     position: absolute;
@@ -321,12 +323,12 @@ div[class*="arrow-"] {
     left: 0;
     height: 0.5vmin;
     background: white;
-    -webkit-transform: translate(0em, 1.815em) rotate(45deg);
-    -ms-transform: translate(0em, 1.815em) rotate(45deg);
-    transform: translate(0em, 1.815em) rotate(45deg);
-    -webkit-transform-origin: left center;
-    -ms-transform-origin: left center;
-    transform-origin: left center; }
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 1% 0%;
+    -ms-transform-origin: 1% 0%;
+    transform-origin: 1% 0%; }
   .left .arrow-left:after {
     content: '';
     position: absolute;
@@ -335,9 +337,9 @@ div[class*="arrow-"] {
     left: 0;
     height: 0.5vmin;
     background: white;
-    -webkit-transform: translate(0em, 1.9em) rotate(-45deg);
-    -ms-transform: translate(0em, 1.9em) rotate(-45deg);
-    transform: translate(0em, 1.9em) rotate(-45deg);
-    -webkit-transform-origin: left center;
-    -ms-transform-origin: left center;
-    transform-origin: left center; }
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 1% 100%;
+    -ms-transform-origin: 1% 100%;
+    transform-origin: 1% 100%; }
