@@ -438,9 +438,9 @@ canvas {
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
-  -webkit-transform: scale(0.31);
-  -ms-transform: scale(0.31);
-  transform: scale(0.31); }
+  -webkit-transform: scale(0.24);
+  -ms-transform: scale(0.24);
+  transform: scale(0.24); }
 
 .canvas-overlay {
   position: absolute;
