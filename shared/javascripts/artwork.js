@@ -44,7 +44,7 @@
     }
 
     var canvasSize = document.createElement("div");
-    canvasSize.css( {"z-index": "9000"} );
+    canvasSize.style.zIndex = 9000;
     canvasSize.innerHTML = "Width: "+width+", Height: "+height;
 
     var lines = [];
