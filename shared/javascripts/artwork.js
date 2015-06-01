@@ -335,7 +335,7 @@
       imgObj.style.backgroundColor = canvas.style.backgroundColor;
       canvas.parentNode.insertBefore(imgObj, document.getElementsByClassName("canvas-overlay")[0]);
       canvas.outerHTML = "";
-    }, 100);
+    }, 1000);
   }
 
   BackgroundArtwork.setColor( artworkColor );
