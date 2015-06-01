@@ -323,20 +323,18 @@
 
         if( !document.body.querySelector( '.mesh-disabled' ) ) {
           BackgroundArtwork.init();
+          if (!screenOnly) {
+            var canvas = document.getElementsByTagName("canvas")[0];
+            var img    = canvas.toDataURL("image/png");
+            var imgObj = new Image();
+            imgObj.src = img;
+            imgObj.style.backgroundColor = canvas.style.backgroundColor;
+            canvas.parentNode.insertBefore(imgObj, document.getElementsByClassName("canvas-overlay")[0]);
+            canvas.outerHTML = "";
+          }
         }
     }
-  }, 50); 
-  if (!screenOnly) {
-    var captureArtwork = setTimeout(function() {
-      var canvas = document.getElementsByTagName("canvas")[0];
-      var img    = canvas.toDataURL("image/png");
-      var imgObj = new Image();
-      imgObj.src = img;
-      imgObj.style.backgroundColor = canvas.style.backgroundColor;
-      canvas.parentNode.insertBefore(imgObj, document.getElementsByClassName("canvas-overlay")[0]);
-      canvas.outerHTML = "";
-    }, 1000);
-  }
+  }, 50);
 
   BackgroundArtwork.setColor( artworkColor );
   BackgroundArtwork.setZoom( artworkZoom );
