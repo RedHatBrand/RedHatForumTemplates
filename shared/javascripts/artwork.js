@@ -3,6 +3,7 @@
 
   var artworkColor         = global.artworkColor;
   var artworkZoom          = global.artworkZoom;
+  var screenOnly          = global.screenOnly;
 
   var BackgroundArtwork = (function() {
 
@@ -33,8 +34,8 @@
         time = 0,
         firstFrame = true;
 
-    var width = document.body.clientWidth * 4.16666667,
-        height = document.body.clientHeight * 4.16666667;
+    var width = document.body.clientWidth,
+        height = document.body.clientHeight;
 
     console.log("Width:"+width+", Height:"+height)
 
@@ -234,8 +235,8 @@
 
     function layout() {
 
-      width = document.body.clientWidth * 4.16666667;
-      height = document.body.clientHeight * 4.16666667;
+      width = screenOnly ? document.body.clientWidth : document.body.clientWidth * 4.16666667;
+      height = screenOnly ? document.body.clientHeight : document.body.clientHeight * 4.16666667;
 
       if( SIMPLIFIED ) {
         canvas.style.width = width + 'px';
@@ -317,14 +318,25 @@
 
 
   var artworkInitInterval = setInterval(function() {
-      if( document.readyState === 'complete' ) {
-          clearInterval( artworkInitInterval );
+    if( document.readyState === 'complete' ) {
+        clearInterval( artworkInitInterval );
 
-          if( !document.body.querySelector( '.mesh-disabled' ) ) {
-            BackgroundArtwork.init();
-          }
-      }
-  }, 500);
+        if( !document.body.querySelector( '.mesh-disabled' ) ) {
+          BackgroundArtwork.init();
+        }
+    }
+  }, 50); 
+  if (!screenOnly) {
+    var captureArtwork = setTimeout(function() {
+      var canvas = document.getElementsByTagName("canvas")[0];
+      var img    = canvas.toDataURL("image/png");
+      var imgObj = new Image();
+      imgObj.src = img;
+      imgObj.style.backgroundColor = canvas.style.backgroundColor;
+      canvas.parentNode.insertBefore(imgObj, document.getElementsByClassName("canvas-overlay")[0]);
+      canvas.outerHTML = "";
+    }, 100);
+  }
 
   BackgroundArtwork.setColor( artworkColor );
   BackgroundArtwork.setZoom( artworkZoom );

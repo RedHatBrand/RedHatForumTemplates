@@ -17,8 +17,9 @@
 <!--[if lt IE 9]> <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script> <![endif]-->
 
 <style type="text/css">
+  .hero { background: rgb({{ artwork-background }}); }
   canvas { background: rgb({{ artwork-background }}); }
-  .canvas-overlay { background-image: radial-gradient( ellipse closest-side at center, rgba({{ artwork-background }},0) 0%, rgba({{ artwork-background }},1) 100% ); }
+  .canvas-overlay { background: none; box-shadow: inset 0px 0px 15em 10em rgb({{artwork-background}}) }
 </style>
 </head>
 <body class="">
@@ -125,6 +126,7 @@
 <script type="text/javascript">
   window.artworkColor = { {{ artwork-color }} };
   window.artworkZoom = {{ artwork-zoom }};
+  window.screenOnly = true;
 </script>
 
 <script type="text/javascript" src="//redhatbrand.github.io/RedHatForumTemplates/shared/javascripts/artwork.js"></script>

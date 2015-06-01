@@ -457,6 +457,9 @@ body {
   position: relative;
   overflow: hidden; }
 
+img {
+  max-width: 100%; }
+
 h1 {
   font-size: 24vmin !important;
   line-height: 1em !important;
