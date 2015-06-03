@@ -264,7 +264,7 @@ body {
   text-align: center; }
   #content .content-title {
     font-size: 8vmin !important;
-    line-height: 1.2em;
+    line-height: 1.2em !important;
     margin-bottom: 0.4em; }
     @media screen and (min-aspect-ratio: 4/1) {
       #content .content-title {
