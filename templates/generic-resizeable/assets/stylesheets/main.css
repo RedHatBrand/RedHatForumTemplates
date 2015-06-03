@@ -258,6 +258,9 @@ body {
 
 .canvas-overlay {
   background: none;
+  -webkit-transform: scaleY(2);
+  -ms-transform: scaleY(2);
+  transform: scaleY(2);
   box-shadow: inset -30vw 0 30vw 0 currentColor, inset 30vw 0 30vw 0 currentColor; }
 
 #content {
