@@ -1,0 +1,106 @@
+@import "../../../../../node_modules/red-hat-brand-typography/scss/red-hat-typography";   
+@import "../../../../../node_modules/red-hat-brand-palette/scss/red-hat-palette";
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.canvas-overlay {
+  background: none;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 100%;
+    top: 0;
+    box-shadow: 15vw 0 25vw 0 currentColor;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+    top: 0;
+    box-shadow: -15vw 0 25vw 0 currentColor;
+  }
+}
+
+#content {
+  max-width: none;
+  width: 75vw;
+  text-align: center;
+
+  .content-title {
+    font-size: 8vmin !important;
+    line-height: 1.2em !important;
+    margin-bottom: 0.4em;
+
+    @media all and (min-aspect-ratio: 4/1) {
+      font-size: 14vmin !important;
+    }
+  }
+
+  .content-text {
+    font-size: 6vmin !important;
+    line-height: 1.2em;
+
+    @media all and (min-aspect-ratio: 4/1) {
+      font-size: 8vmin !important;
+    }
+  }
+}
+
+.bottom-right, 
+.bottom-left {
+  max-width: 30vw;
+  width: 60vh;
+  margin: 7vmin;
+
+  * {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #logo-forum {
+    margin-bottom: -1vmin;
+    transform: scale(1.1) !important;
+  }
+}
+
+// Layout
+
+@media all and (min-aspect-ratio: 4/1) {
+  #content {
+    width: 40vw;
+    text-align: left;
+    transform: translateY(-50%);
+    left: 130vmin;
+    margin-left: 2em;
+    padding-left: 2em;
+    border-left: 0.2em solid white;
+  }
+
+  .bottom-left {
+    width: 110vmin;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    margin-left: 20vmin !important;
+  }
+
+  .bottom-right {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    margin: 0;
+    margin-right: 20vmin !important;
+  }
+}

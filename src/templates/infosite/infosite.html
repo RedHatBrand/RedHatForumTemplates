@@ -21,8 +21,9 @@ height: 100vh
 <!--[if lt IE 9]> <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script> <![endif]-->
 
 <style type="text/css">
+  .hero { background: rgb({{ artwork-background }}); }
   canvas { background: rgb({{ artwork-background }}); }
-  .canvas-overlay { background-image: radial-gradient( ellipse closest-side at center, rgba({{ artwork-background }},0) 0%, rgba({{ artwork-background }},1) 100% ); }
+  
 </style>
 </head>
 <body class="">
@@ -129,6 +130,7 @@ height: 100vh
 <script type="text/javascript">
   window.artworkColor = { {{ artwork-color }} };
   window.artworkZoom = {{ artwork-zoom }};
+  window.screenOnly = true;
 </script>
 
 <script type="text/javascript" src="<%= baseUrl %>/shared/javascripts/artwork.js"></script>

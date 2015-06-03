@@ -1,0 +1,15 @@
+{
+  "data": {
+    "region": "Asia Pacific",
+    "year": "FY14",
+    "headline": "Headline. Tagline. Here.",
+    "width": "210",
+    "height": "297",
+    "unit": "mm",
+    "content-title": "Experience Open Source",
+    "content-text": "This is some text and here is some more text. and moooore lorem ipsum dollas",
+    "artwork-image": "assets/images/glowwave-background-red.svg",
+    "artwork-background": "65,0,0",
+    "artwork-zoom": 1
+  }
+}

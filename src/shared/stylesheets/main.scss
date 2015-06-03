@@ -17,6 +17,10 @@ body {
   overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1 {
   font-size: 24vmin !important;
   line-height: 1em !important;
@@ -101,7 +105,7 @@ main {
     bottom: -7.5vmin;
     left: 0;
     width: 100%;
-    height: .5vmin;
+    height: 0.5vmin;
     background: white;
   }
 }
@@ -117,7 +121,7 @@ main {
     left: 0;
     width: 100%;
     transform: scaleX(1.3);
-    height: .5vmin;
+    height: 0.5vmin;
     background: white;
   }
 }
@@ -176,5 +180,5 @@ main {
   display: inline-block;
   background: white;
   color: rgb(59,0,131);
-  padding: .5em 1em .5em 1em;
+  padding: 0.5em 1em 0.5em 1em;
 }

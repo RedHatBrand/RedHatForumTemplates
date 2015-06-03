@@ -10,6 +10,10 @@
   > * {
     transition: all 0.3s ease-in-out;
   }
+
+  img {
+    max-width: 100%;
+  }
   
   @media screen and (min-width: $breakpoint-medium) {
     &:hover {
