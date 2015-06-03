@@ -9,3 +9,14 @@
     color: $color-rh-black;
   }
 }
+
+.speaker-avatar {
+  background-color: $color-rh-grey;
+
+  &.blank {
+    background-image: url(../../../../assets/images/icons/blank-avatar.svg) !important;
+    background-size: 100% auto;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+  }
+}

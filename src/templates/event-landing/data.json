@@ -30,7 +30,15 @@
         "title": "Senior Vice President and General Manager",
         "company": "Red Hat – Asia Pacific",
         "description": "<p>Van Leeuwen first joined Red Hat in 2004 to establish Red Hat's operations in Belgium, the Netherlands, and Luxembourg (Benelux). By 2008, his portfolio included the Central and Eastern European (CEE) market operations and he was promoted to vice president for CEE, responsible for sales and general management of Red Hat's business in the region.</p><p>Van Leeuwen has more than 20 years experience in the IT industry and has a deep understanding of the enterprise software market and the channels in Europe. Prior to working for Red Hat, he was a European director for PlanetWeb Inc. and the director of Northern Europe for SCO, where he built its sales operations in Benelux and the Nordic region.</p>"
+      },
+      {
+        "slug": "pictureless",
+        "name": "Picture-less Speaker",
+        "title": "Person of mystery",
+        "company": "Red Hat – Asia Pacific",
+        "description": "Foo and bar and such"
       }
+
     ],
     "agenda-title": "Agenda",
     "agenda-days": [

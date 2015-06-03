@@ -26,8 +26,10 @@
   }
 
   .modal-close {
+    cursor: pointer;
     position: absolute;
-    top: 1.6em;
+    top: 50%;
+    transform: translateY(-50%);
     right: 1.6em;
     margin: 0;
     font-size: 1em;
