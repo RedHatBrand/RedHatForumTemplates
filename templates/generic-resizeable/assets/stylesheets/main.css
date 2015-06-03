@@ -330,6 +330,7 @@ body {
   .bottom-left {
     width: 110vmin;
     top: 50%;
+    bottom: auto;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
