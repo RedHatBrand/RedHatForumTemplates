@@ -1402,7 +1402,8 @@ body > section#agenda {
 #artwork-canvas {
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  background-color: #3B0083; }
 
 #sub-nav .container {
   background-color: white; }
