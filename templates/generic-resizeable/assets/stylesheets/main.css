@@ -250,11 +250,13 @@ pre {
   color: white;
   background-color: dimgrey; }
 
+html, body {
+  overflow: hidden; }
+
 body {
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden; }
+  background-repeat: no-repeat; }
 
 .canvas-overlay {
   background: none; }
