@@ -262,6 +262,7 @@ body {
     content: '';
     position: absolute;
     height: 100%;
+    width: 10%;
     background-color: yellow;
     left: 0;
     top: 0;
@@ -270,7 +271,8 @@ body {
     content: '';
     position: absolute;
     height: 100%;
-    background-color: yellow;
+    width: 10%;
+    background-color: blue;
     right: 0;
     top: 0;
     box-shadow: 0 0 25vw 30vw currentColor; }
