@@ -257,11 +257,23 @@ body {
   overflow: hidden; }
 
 .canvas-overlay {
-  background: none;
-  -webkit-transform: scaleY(5);
-  -ms-transform: scaleY(5);
-  transform: scaleY(5);
-  box-shadow: inset -30vw 0 30vw 0 currentColor, inset 30vw 0 30vw 0 currentColor; }
+  background: none; }
+  .canvas-overlay:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: yellow;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 25vw 30vw currentColor; }
+  .canvas-overlay:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: yellow;
+    right: 0;
+    top: 0;
+    box-shadow: 0 0 25vw 30vw currentColor; }
 
 #content {
   max-width: none;
