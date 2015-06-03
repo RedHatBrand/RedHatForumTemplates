@@ -266,13 +266,13 @@ body {
     font-size: 8vmin !important;
     line-height: 1.2em !important;
     margin-bottom: 0.4em; }
-    @media screen and (min-aspect-ratio: 4/1) {
+    @media (min-aspect-ratio: 4/1) {
       #content .content-title {
         font-size: 14vmin !important; } }
   #content .content-text {
     font-size: 6vmin !important;
     line-height: 1.2em; }
-    @media screen and (min-aspect-ratio: 4/1) {
+    @media (min-aspect-ratio: 4/1) {
       #content .content-text {
         font-size: 8vmin !important; } }
 
@@ -290,7 +290,7 @@ body {
     -ms-transform: scale(1.1) !important;
     transform: scale(1.1) !important; }
 
-@media screen and (min-aspect-ratio: 4/1) {
+@media (min-aspect-ratio: 4/1) {
   #content {
     width: 40vw;
     text-align: left;
