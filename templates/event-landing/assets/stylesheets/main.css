@@ -1393,6 +1393,8 @@ body > section#agenda {
   .hero-text h1 {
     margin-top: 0.5em;
     line-height: 1em; }
+  .hero-text.container {
+    padding: 0 1.5em; }
 
 .hero ul.nav {
   margin-top: 1.5em; }
