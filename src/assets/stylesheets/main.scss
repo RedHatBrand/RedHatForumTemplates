@@ -1,0 +1,500 @@
+@import url('https://red-hat-overpass-fonts.s3.amazonaws.com/overpass.css');
+
+@import '../../../node_modules/red-hat-brand-typography/scss/red-hat-typography';
+@import '../../../node_modules/red-hat-brand-palette/scss/red-hat-palette';
+
+/*\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+               NATIVE ELEMENTS
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background: white;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: #646464;
+}
+
+.newsletter .container {
+  max-width: 900px;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1000px;
+  padding: 0 2em;
+}
+
+.content-small > * {
+  font-size: 0.75em;
+}
+
+img { display: block }
+
+/*\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+                   LAYOUT
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+header[role="banner"] {
+  margin: 0;
+  padding: 4em 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+section {
+  padding: 3em 0;
+  margin: 0;
+}
+
+section:nth-child(odd) {
+  background-color: whitesmoke;
+}
+
+footer { margin: 0; }
+
+.newsletter .hero { padding: 0; }
+
+.hero .button { display: inline-block; }
+
+.hero h3 {
+  color: white;
+}
+
+.button {
+  background: #c00;
+  text-transform: uppercase;
+  color: white;
+  padding: 1em 2em;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer {
+  background: #111;
+  color: rgba(255, 255, 255, 0.72);
+  padding: 3em 0;
+}
+
+.section img {
+  width: 100%;
+}
+
+.footer a {
+  color: inherit;
+}
+
+.social-links {
+  text-align: right;
+
+  img { display: initial }
+}
+
+.clear {
+  clear: both;
+}
+
+/*\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+              LAYOUT :: GRID
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+@media screen and (min-width: 560px) {
+  .grid-container {
+    margin-left: -1em;
+    margin-right: -1em;
+
+    &.tight{
+      margin-left: -0.5em;
+      margin-right: -0.5em;
+    }
+
+    &:before, &:after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+  }
+
+  .grid-item {
+    padding: 1em;
+    box-sizing: border-box;
+  }
+
+  .tight .grid-item {
+    padding: 0.5em;
+  }
+
+  .grid-item + .grid-item {
+    margin: 0;
+  }
+
+  .one-half {
+    float: left;
+    width: 50%;
+  }
+
+  .one-third {
+    float: left;
+    width: 33.333%;
+  }
+
+  .one-quarter {
+    float: left;
+    width: 25%;
+  }
+
+  .two-thirds {
+    float: left;
+    width: 66.667%;
+  }
+
+  .body-section-feature-image + .body-section-content,
+  .featured-article-feature-image + .featured-article-content {
+    float: left;
+  }
+
+  .body-section-feature-image + .body-section-content,
+  .featured-article-feature-image + .featured-article-content {
+    width: 66.667%;
+  }
+
+  .body-section-feature-image,
+  .featured-article-feature-image {
+    width: 33.333%;
+  }
+
+  .feature-image-layout-third {
+    .body-section-feature-image + .body-section-content,
+    .feature-article-feature-image + .featured-article-content {
+      width: 66.667%;
+    }
+  }
+
+  .feature-image-layout-third {
+    .body-section-feature-image,
+    .feature-article-feature-image {
+      width: 33.333%;
+    }
+  }
+
+  .feature-image-layout-half .body-section-feature-image + .body-section-content,
+  .feature-image-layout-half .feature-article-feature-image + .featured-article-content {
+    width: 50%;
+  }
+
+  .feature-image-layout-half .body-section-feature-image,
+  .feature-image-layout-half .feature-article-feature-image {
+    width: 50%;
+  }
+
+
+  .body-section:nth-child(odd),
+  .featured-article:nth-child(odd) {
+    .body-section-feature-image,
+    .featured-article-feature-image {
+      float: right;
+    }
+  }
+
+  .body-section:nth-child(even),
+  .featured-article:nth-child(even) {
+    .body-section-feature-image,
+    .featured-article-feature-image {
+      float: left;
+    }
+  }
+}
+
+/*\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+                  ASSETS
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+.logo-rh {
+  height: 3.5em;
+  width: 11em;
+  background-image: url(../../../../assets/images/logos/rh-logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo-event {
+  height: 4.5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo-rh-forum {
+  width: 12em;
+  background-image: url(../../../../assets/images/logos/rh-forum-logo.svg);
+}
+
+.logo-rh-forum-apac {
+  width: 10.35em;
+  background-image: url(../../../../assets/images/logos/rh-forum-apac-logo.svg);
+}
+
+.logo-pair-lockup {
+  .logo-rh, .logo-event {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .logo-event { margin-right: 1.5em; }
+  .logo-rh { margin-top: 0; }
+}
+
+.social-links img {
+  width: 1.5em;
+}
+
+/*\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+                GATED FORM
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+label + div.controls {
+  margin-top: 0.5em;
+}
+
+#GatedFormContainer img { display: initial }
+
+#GatedFormContainer .controls {
+  position: relative;
+}
+
+#GatedFormContainer .dropdown-arrow::after {
+  top: 1.25em;
+}
+
+#form-section {
+ background: #f2f2f2;
+
+}
+#GatedFormContainer {
+  transition: opacity .5s ease-in-out;
+}
+
+#GatedFormContainer section {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: transparent;
+}
+
+#GatedFormContainer form .form-group {
+  margin: .75em 0;
+  position: relative;
+}
+
+#GatedFormContainer form label {
+  font-weight: 300;
+  font-size: 90%;
+  line-height: 1.5em;
+  color: #999;
+  pointer-events: none;
+  transition: all .35s ease-in-out;
+}
+
+#GatedFormContainer form input,
+#GatedFormContainer form textarea,
+#GatedFormContainer form select,
+#GatedFormContainer form button {
+  font-family: "Overpass", sans-serif;
+  background: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  font-size: 100%;
+  border-radius: 4px;
+  border: solid 1px #d9d9d9;
+  padding: 1em 0.7em 0.7em 0.7em;
+  box-sizing: border-box;
+  transition: border .25s ease-in-out;
+}
+
+#GatedFormContainer form input:focus,
+#GatedFormContainer form textarea:focus,
+#GatedFormContainer form select:focus,
+#GatedFormContainer form button:focus {
+  outline: none;
+  border-color: #c00 !important;
+}
+
+#GatedFormContainer form input:-moz-focusring,
+#GatedFormContainer form textarea:-moz-focusring,
+#GatedFormContainer form select:-moz-focusring,
+#GatedFormContainer form button:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+#GatedFormContainer form input:hover:not(.disabled),
+#GatedFormContainer form textarea:hover:not(.disabled),
+#GatedFormContainer form select:hover:not(.disabled),
+#GatedFormContainer form button:hover:not(.disabled) {
+  border-color: #8c8c8c;
+}
+
+#GatedFormContainer form button {
+  font-family: "Overpass", sans-serif !important;
+  font-weight: 600;
+  cursor: pointer;
+  background: #c00 !important;
+  height: auto;
+  color: white;
+  border-color: #b30000 !important;
+  transition: all .25s ease-in-out;
+}
+
+#GatedFormContainer form button:hover {
+  background: #b30000 !important;
+}
+
+#GatedFormContainer form .form-footer a {
+  color: #c00;
+}
+
+#GatedFormContainer form .form-footer a:hover {
+  color: #b30000;
+}
+
+#GatedFormContainer form textarea {
+  resize: none;
+}
+
+#GatedFormContainer form select[multiple] {
+  height: auto;
+  padding: .75em 1em;
+  padding-bottom: 0;
+}
+
+#GatedFormContainer form select[multiple] option:last-child {
+  margin-bottom: 0;
+}
+
+#GatedFormContainer form select[multiple] option {
+  padding: .5em;
+  margin: .25em 0;
+  border-radius: 4px;
+}
+
+#GatedFormContainer form .form-group.has-error label {
+  color: #c00 !important;
+}
+
+#GatedFormContainer form label.error {
+  position: static;
+}
+
+#GatedFormContainer form label.error:not(:first-child),
+#GatedFormContainer form h1,
+#DynamicFormThankYou .social-icons,
+#GatedFormContainer form .form-message,
+#GatedFormContainer form .rh-logo {
+  display: none !important;
+}
+
+#DynamicFormThankYou {
+  margin-bottom: 1rem;
+}
+#DynamicFormThankYou > .form-header > .form-group > .col-sm-12 > h2 {
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.dropdown-arrow:after {
+  content: "";
+  width: 0;
+  height: 0;
+  right: 24px;
+  top: 2.5em;
+  position: absolute;
+  border-style: solid;
+  border-width: 9px 6px 0px 6px;
+  border-color: #999 transparent transparent transparent;
+}
+
+#elqFrame ~ * {
+  margin: 0;
+}
+
+@media only screen and (min-width: 480px) {
+  .form-group {
+    margin-left: -1em;
+    margin-right: -1em;
+
+    &:after, &:before {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .dropdown-arrow:after {
+      right: 32px;
+    }
+
+    > label { padding: 1em 0.7em 0.7em 0.7em; }
+
+    .col-sm-2, .col-sm-10 {
+      padding-left: 1em;
+      padding-right: 1em;
+      box-sizing: border-box;
+      float: left;
+      margin: 0;
+    }
+
+    .col-sm-2 {
+      width: 25%;
+      display: block;
+      text-align: right;
+    }
+
+    .col-sm-10 {
+      width: 75%;
+    }
+
+    .col-sm-offset-2 {
+      margin-left: 25%;
+    }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #GatedFormContainer form {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+a.call-to-action {
+  color:#ffffff !important;
+  display:inline-block;
+  font-size:13px;
+  font-weight:bold;
+  line-height:35px;
+  text-align:center;
+  text-decoration:none;
+  padding: 0 10px;
+  -webkit-text-size-adjust:none;
+  background-color: #cc0000;
+}
+

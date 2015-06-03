@@ -1,0 +1,42 @@
+.sub-nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  @extend .clearfix;
+
+  > li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+
+    &:before { display: none; }
+
+    > a {
+      position: relative;
+      display: block;
+      padding: 0.25em 0.5em 0;
+      color: #646464;
+      line-height: 3.75em;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        background-color: white;
+      }
+    }
+
+    &.active a {
+      box-shadow: inset 0 -0.25em 0 0 #646464;
+    }
+
+    &.disabled > a {
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        background-color: whitesmoke;
+      }
+    }
+  }
+}

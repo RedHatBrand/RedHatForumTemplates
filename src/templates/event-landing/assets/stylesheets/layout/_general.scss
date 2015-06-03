@@ -1,0 +1,103 @@
+header[role="banner"] {
+  position: relative;
+  z-index: 5;
+}
+
+#main-nav-fixed {
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3.75em;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+
+  .logo-rh, .logo-event {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .logo-pair-lockup {
+    font-size: 0.6em;
+    margin-top: 1.1em;
+    margin-right: 3em;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 3.25em;
+    margin:0;
+    left: 0;
+    right: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    background-color: rgba(0, 0, 0, 0.95)
+  }
+}
+
+#main-nav-fixed nav.menu-show {
+  display: block;
+}
+
+@media screen and (min-width: $max-width) {
+  #main-nav-fixed {
+    z-index: 4;
+    height: 3.75em;
+
+    .logo-pair-lockup { float: left; }
+    nav, ul { display: inline-block; vertical-align: top }
+    nav {
+      position: static;
+      margin:0;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      background-color: transparent
+    }
+  }
+}
+
+body > section {
+  position: relative;
+  background-color: white;
+  z-index: 3;
+}
+
+#sub-nav-fixed {
+  position: fixed;
+  z-index: 2;
+  top: 3.75em;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9)
+}
+
+body > section#agenda {
+  z-index: 1;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+    line-height: 1em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    line-height: 1em;
+  }
+
+  h3 {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+
+  .container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}

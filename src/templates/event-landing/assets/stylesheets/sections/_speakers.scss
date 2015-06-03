@@ -1,0 +1,11 @@
+.speaker-link {
+  text-decoration: none;
+  text-align: center;
+  color: darken($color-rh-grey, 25%);
+
+  h4 { margin-top: 1em; }
+
+  &:hover {
+    color: $color-rh-black;
+  }
+}

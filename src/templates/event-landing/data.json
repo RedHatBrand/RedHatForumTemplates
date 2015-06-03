@@ -1,0 +1,792 @@
+{
+  "title": "Event Landing Page Template Example",
+  "data": {
+    "lang": "en",
+    "hero-heading":  "Headline. Tagline. Here.",
+    "date": "20/1/16",
+    "event-region": "apac",
+    "event-city": "singapore",
+    "footer": "<p>this is my footer, there are many like it <br> but this one is mine</p>",
+    "background-darken-amount": "0.10",
+    "call-to-action": "Register now",
+    "body-sections": [
+      {
+        "link-text": "Phasellus Molestie",
+        "slug": "phasellus-molestie",
+        "title": "Phasellus Molestie Magna Non Est Bibendum",
+        "body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed.</p> <p>Molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla.</p>",
+        "feature-image-layout": "half",
+        "library-feature-image": "",
+        "custom-feature-image": "http://redhatbrand.github.io/email-and-landing-pages/assets/images/headers/building.jpg"
+      }
+    ],
+    "landing-page-sections": [],
+    "speakers-title": "Speakers",
+    "speakers": [
+      {
+        "slug": "dirk-peter-van-leeuwen",
+        "name": "Dirk-Peter van Leeuwen",
+        "profile-photo": "http://www.redhat.com/cms/public/Portrait_DirkPeterVanLeeuwen_400x600.jpg",
+        "title": "Senior Vice President and General Manager",
+        "company": "Red Hat – Asia Pacific",
+        "description": "<p>Van Leeuwen first joined Red Hat in 2004 to establish Red Hat's operations in Belgium, the Netherlands, and Luxembourg (Benelux). By 2008, his portfolio included the Central and Eastern European (CEE) market operations and he was promoted to vice president for CEE, responsible for sales and general management of Red Hat's business in the region.</p><p>Van Leeuwen has more than 20 years experience in the IT industry and has a deep understanding of the enterprise software market and the channels in Europe. Prior to working for Red Hat, he was a European director for PlanetWeb Inc. and the director of Northern Europe for SCO, where he built its sales operations in Benelux and the Nordic region.</p>"
+      }
+    ],
+    "agenda-title": "Agenda",
+    "agenda-days": [
+      {
+        "label": "Day 1",
+        "name": "Sunday",
+        "slug": "sunday",
+        "date": "March 17, 2015",
+        "sessions": [
+          {
+              "start": "9:00",
+              "end": "17:00",
+              "title": "Arrivals and Conference Check-In"
+          },
+          {
+              "type": "break",
+              "start": "17:00",
+              "end": "18:00",
+              "title": "Free and Easy"
+          },
+          {
+              "start": "18:00",
+              "end": "19:30",
+              "location": "Location TBC",
+              "title": "Welcome Reception",
+              "speaker": "Dirk-Peter van Leeuwen"
+          }
+        ]
+      },
+      {
+        "label": "Day 2",
+        "name": "Monday",
+        "slug": "monday",
+        "date": "March 16, 2015",
+        "sessions": [
+          {
+            "type": "break",
+            "start": "8:00",
+            "end": "8:30",
+            "title": "Please make your way to the ballroom"
+          },
+          {
+            "start": "8:30",
+            "end": "9:00",
+            "location": "Ballroom",
+            "title": "Opening Keynote"
+          },
+          {
+            "start": "9:00",
+            "end": "9:30",
+            "location": "Ballroom",
+            "title": "Title TBD"
+          },
+          {
+            "start": "9:30",
+            "end": "10:00",
+            "location": "Ballroom",
+            "title": "Title TBD"
+          },
+          {
+            "start": "10:00",
+            "end": "10:45",
+            "location": "Ballroom",
+            "title": "Title TBD"
+          },
+          {
+            "type": "break",
+            "start": "10:45",
+            "end": "11:15",
+            "title": "Coffee Break"
+          },
+          {
+            "start": "11:15",
+            "end": "11:45",
+            "location": "Ballroom",
+            "title": "Title TBD"
+          },
+          {
+            "start": "11:45",
+            "end": "12:30",
+            "location": "Ballroom",
+            "title": "Services (should include COE title)"
+          },
+          {
+            "type": "break",
+            "start": "12:30",
+            "end": "13:45",
+            "location": "Ballroom",
+            "title": "Lunch"
+          },
+          {
+            "start": "13:45",
+            "end": "14:15",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #1",
+            "group": "Group 1"
+          },
+          {
+            "start": "13:45",
+            "end": "14:15",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #2",
+            "group": "Group 2"
+          },
+          {
+            "start": "13:45",
+            "end": "14:15",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #3",
+            "group": "Group 3"
+          },
+          {
+            "start": "13:45",
+            "end": "14:15",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #4",
+            "group": "Group 4"
+          },
+          {
+            "start": "13:45",
+            "end": "14:15",
+            "location": "Breakout Rooms",
+            "title": "Competitive - OpenStack",
+            "speaker": "Nick B",
+            "group": "Group 5"
+          },
+          {
+            "start": "13:45",
+            "end": "14:15",
+            "location": "Breakout Rooms",
+            "title": "Competitive - Middleware",
+            "group": "Group 6"
+          },
+          {
+            "start": "14:15",
+            "end": "14:45",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #1",
+            "group": "Group 1"
+          },
+          {
+            "start": "14:15",
+            "end": "14:45",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #2",
+            "group": "Group 2"
+          },
+          {
+            "start": "14:15",
+            "end": "14:45",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #3",
+            "group": "Group 3"
+          },
+          {
+            "start": "14:15",
+            "end": "14:45",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #4",
+            "group": "Group 4"
+          },
+          {
+            "start": "14:15",
+            "end": "14:45",
+            "location": "Breakout Rooms",
+            "title": "Competitive - OpenShift",
+            "speaker": "Joe F",
+            "group": "Group 5"
+          },
+          {
+            "start": "14:15",
+            "end": "14:45",
+            "location": "Breakout Rooms",
+            "speaker": "Philippe Theriault",
+            "group": "Group 6"
+          },
+          {
+            "start": "14:45",
+            "end": "15:15",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #2",
+            "group": "Group 1"
+          },
+          {
+            "start": "14:45",
+            "end": "15:15",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #1",
+            "group": "Group 2"
+          },
+          {
+            "start": "14:45",
+            "end": "15:15",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #3",
+            "group": "Group 3"
+          },
+          {
+            "start": "14:45",
+            "end": "15:15",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #4",
+            "group": "Group 4"
+          },
+          {
+            "start": "14:45",
+            "end": "15:15",
+            "location": "Breakout Rooms",
+            "title": "Competitive - Middleware",
+            "group": "Group 5"
+          },
+          {
+            "start": "14:45",
+            "end": "15:15",
+            "location": "Breakout Rooms",
+            "title": "Competitive - OpenStack",
+            "speaker": "Nick B",
+            "group": "Group 6"
+          },
+          {
+            "start": "15:15",
+            "end": "15:45",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #2",
+            "group": "Group 1"
+          },
+          {
+            "start": "15:15",
+            "end": "15:45",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #1",
+            "group": "Group 2"
+          },
+          {
+            "start": "15:15",
+            "end": "15:45",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #3",
+            "group": "Group 3"
+          },
+          {
+            "start": "15:15",
+            "end": "15:45",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #4",
+            "group": "Group 4"
+          },
+          {
+            "start": "15:15",
+            "end": "15:45",
+            "location": "Breakout Rooms",
+            "speaker": "Philippe Theriault",
+            "group": "Group 5"
+          },
+          {
+            "start": "15:15",
+            "end": "15:45",
+            "location": "Breakout Rooms",
+            "title": "Competitive - OpenShift",
+            "speaker": "Joe F",
+            "group": "Group 6"
+          },
+          {
+            "type": "break",
+            "start": "15:45",
+            "end": "16:00",
+            "title": "Coffee Break"
+          },
+          {
+            "start": "16:00",
+            "end": "16:30",
+            "location": "Breakout Rooms",
+            "title": "TBA",
+            "group": "Group 1"
+          },
+          {
+            "start": "16:00",
+            "end": "16:30",
+            "location": "Breakout Rooms",
+            "title": "TBA",
+            "group": "Group 2"
+          },
+          {
+            "start": "16:00",
+            "end": "16:30",
+            "location": "Breakout Rooms",
+            "title": "TBA",
+            "group": "Group 3"
+          },
+          {
+            "start": "16:00",
+            "end": "16:30",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #2",
+            "group": "Group 4"
+          },
+          {
+            "start": "16:00",
+            "end": "16:30",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #1",
+            "group": "Group 5"
+          },
+          {
+            "start": "16:00",
+            "end": "16:30",
+            "location": "Breakout Rooms",
+            "title": "Helen Kim",
+            "group": "Group 6"
+          },
+          {
+            "start": "16:30",
+            "end": "17:00",
+            "location": "Breakout Rooms",
+            "group": "Group 1"
+          },
+          {
+            "start": "16:30",
+            "end": "17:00",
+            "location": "Breakout Rooms",
+            "title": "TBA",
+            "group": "Group 2"
+          },
+          {
+            "start": "16:30",
+            "end": "17:00",
+            "location": "Breakout Rooms",
+            "title": "TBA",
+            "group": "Group 3"
+          },
+          {
+            "start": "16:30",
+            "end": "17:00",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #2",
+            "group": "Group 4"
+          },
+          {
+            "start": "16:30",
+            "end": "17:00",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #1",
+            "group": "Group 5"
+          },
+          {
+            "start": "16:30",
+            "end": "17:00",
+            "location": "Breakout Rooms",
+            "speaker": "Andy Karandikar",
+            "group": "Group 6"
+          },
+          {
+            "start": "17:00",
+            "end": "17:30",
+            "location": "Breakout Rooms",
+            "title": "TBA",
+            "group": "Group 1"
+          },
+          {
+            "start": "17:00",
+            "end": "17:30",
+            "location": "Breakout Rooms",
+            "title": "TBA",
+            "group": "Group 2"
+          },
+          {
+            "start": "17:00",
+            "end": "17:30",
+            "location": "Breakout Rooms",
+            "title": "TBA",
+            "group": "Group 3"
+          },
+          {
+            "start": "17:00",
+            "end": "17:30",
+            "location": "Breakout Rooms",
+            "title": "Competitive - Middleware",
+            "group": "Group 4"
+          },
+          {
+            "start": "17:00",
+            "end": "17:30",
+            "location": "Breakout Rooms",
+            "speaker": "Helen Kim",
+            "group": "Group 5"
+          },
+          {
+            "start": "17:00",
+            "end": "17:30",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #1",
+            "group": "Group 6"
+          },
+          {
+            "start": "17:30",
+            "end": "18:00",
+            "location": "Breakout Rooms",
+            "title": "TBA",
+            "group": "Group 1"
+          },
+          {
+            "start": "17:30",
+            "end": "18:00",
+            "location": "Breakout Rooms",
+            "title": "TBA",
+            "group": "Group 2"
+          },
+          {
+            "start": "17:30",
+            "end": "18:00",
+            "location": "Breakout Rooms",
+            "title": "TBA",
+            "group": "Group 3"
+          },
+          {
+            "start": "17:30",
+            "end": "18:00",
+            "location": "Breakout Rooms",
+            "speaker": "Philippe Theriault",
+            "group": "Group 4"
+          },
+          {
+            "start": "17:30",
+            "end": "18:00",
+            "location": "Breakout Rooms",
+            "speaker": "Andy Karandikar",
+            "group": "Group 5"
+          },
+          {
+            "start": "17:30",
+            "end": "18:00",
+            "location": "Breakout Rooms",
+            "title": "Sales Play #1",
+            "group": "Group 6"
+          },
+          {
+            "type": "break",
+            "start": "18:00",
+            "end": "19:00",
+            "title": "End of Sessions - Free time to change for Gala Awards Dinner"
+          },
+          {
+            "start": "19:00",
+            "end": "21:30",
+            "title": "Gala Awards Dinner"
+          },
+          {
+            "type": "break",
+            "start": "21:30",
+            "end": "0:00",
+            "title": "End of Awards Dinner"
+          }
+        ]
+      },
+      {
+        "label": "Day 3",
+        "name": "Tuesday",
+        "slug": "tuesday",
+        "date": "March 17, 2015",
+        "sessions": [
+          {
+              "start": "8:00",
+              "end": "8:30",
+              "title": "Make your way to the ballroom"
+          },
+          {
+              "start": "8:30",
+              "end": "9:00",
+              "location": "Ballroom",
+              "title": "Opening Keynote",
+              "speaker": "Frank Feldmann"
+          },
+          {
+              "start": "9:00",
+              "end": "9:30",
+              "title": "Title TBD",
+              "speaker": "Sachin Shridhar"
+          },
+          {
+              "start": "10:00",
+              "end": "10:30",
+              "title": "Title TBD",
+              "speaker": "Josep Garcia"
+          },
+          {
+              "type": "break",
+              "start": "10:30",
+              "end": "11:00",
+              "title": "Coffee Break"
+          },
+          {
+              "start": "11:00",
+              "end": "11:45",
+              "title": "Title TBD (starts with 15m video footage)",
+              "speaker": "Ed Rockwell"
+          },
+          {
+              "start": "11:45",
+              "end": "12:15",
+              "title": "Title TBD",
+              "speaker": "Mandeep Chaddha"
+          },
+          {
+              "start": "12:15",
+              "end": "2:00",
+              "title": "Team Building"
+          },
+          {
+              "type": "break",
+              "start": "14:00",
+              "end": "15:00",
+              "title": "Lunch"
+          },
+          {
+              "start": "15:00",
+              "end": "16:00",
+              "title": "Roadmap of OpenStack",
+              "speaker": "Nick Barcet",
+              "group": "Group 1"
+          },
+          {
+              "start": "15:00",
+              "end": "16:00",
+              "title": "The DevOps Journey",
+              "speaker": "Bryan Che",
+              "group": "Group 2"
+          },
+          {
+              "start": "15:00",
+              "end": "16:00",
+              "title": "Alessandro Perilli - Our Cloud Story",
+              "speaker": "Alessandro Perilli",
+              "group": "Group 3"
+          },
+          {
+              "start": "15:00",
+              "end": "16:00",
+              "title": "The CTO Agenda",
+              "speaker": "Chris Wright",
+              "group": "Group 4"
+          },
+          {
+              "start": "15:00",
+              "end": "16:00",
+              "title": "Roadmap of OpenShift",
+              "speaker": "Ashesh Badani",
+              "group": "Group 5"
+          },
+          {
+              "start": "15:00",
+              "end": "16:00",
+              "title": "An RHCI Story",
+              "speaker": "James Labocki",
+              "group": "Group 6"
+          },
+          {
+              "start": "16:00",
+              "end": "16:30",
+              "title": "Competitive - OpenStack",
+              "speaker": "NickB",
+              "group": "Group 1"
+          },
+          {
+              "start": "16:00",
+              "end": "16:30",
+              "title": "Competitive - OpenShift",
+              "speaker": "JoeF",
+              "group": "Group 2"
+          },
+          {
+              "start": "16:00",
+              "end": "17:00",
+              "title": "Sales Play #1",
+              "group": "Group 3"
+          },
+          {
+              "start": "16:00",
+              "end": "16:30",
+              "speaker": "Helen Kim",
+              "group": "Group 4"
+          },
+          {
+              "start": "16:00",
+              "end": "17:00",
+              "title": "Sales Play #2",
+              "group": "Group 5"
+          },
+          {
+              "start": "16:00",
+              "end": "17:00",
+              "title": "Sales Play #4",
+              "group": "Group 6"
+          },
+          {
+              "start": "16:30",
+              "end": "17:00",
+              "title": "Competitive - OpenShift",
+              "speaker": "JoeF",
+              "group": "Group 1"
+          },
+          {
+              "start": "16:30",
+              "end": "17:00",
+              "title": "Competitive - Middleware",
+              "group": "Group 2"
+          },
+          {
+              "start": "16:30",
+              "end": "17:00",
+              "speaker": "Andy Karandikar",
+              "group": "Group 4"
+          },
+          {
+              "type": "break",
+              "start": "17:00",
+              "end": "17:30",
+              "title": "Coffee Break"
+          },
+          {
+              "start": "17:30",
+              "end": "18:00",
+              "title": "Competitive - Middleware",
+              "group": "Group 1"
+          },
+          {
+              "start": "17:30",
+              "end": "18:00",
+              "speaker": "Philippe Theriault",
+              "group": "Group 2"
+          },
+          {
+              "start": "17:30",
+              "end": "18:00",
+              "speaker": "Helen Kim",
+              "group": "Group 3"
+          },
+          {
+              "start": "17:30",
+              "end": "18:30",
+              "title": "Sales Play #1",
+              "group": "Group 4"
+          },
+          {
+              "start": "17:30",
+              "end": "18:30",
+              "title": "Sales Play #4",
+              "group": "Group 5"
+          },
+          {
+              "start": "17:30",
+              "end": "18:30",
+              "title": "Sales Play #3",
+              "group": "Group 6"
+          },
+          {
+              "start": "18:00",
+              "end": "18:30",
+              "speaker": "Philippe Theriault",
+              "group": "Group 1"
+          },
+          {
+              "start": "18:00",
+              "end": "18:30",
+              "speaker": "Helen Kim",
+              "group": "Group 2"
+          },
+          {
+              "start": "18:00",
+              "end": "18:30",
+              "speaker": "Andy Karandikar",
+              "group": "Group 3"
+          },
+          {
+              "start": "18:30",
+              "end": "19:00",
+              "speaker": "Helen Kim",
+              "group": "Group 1"
+          },
+          {
+              "start": "18:30",
+              "end": "19:00",
+              "speaker": "Andy Karandikar",
+              "group": "Group 2"
+          },
+          {
+              "start": "18:30",
+              "end": "19:00",
+              "title": "Competitive - Middleware",
+              "group": "Group 3"
+          },
+          {
+              "start": "18:30",
+              "end": "19:00",
+              "title": "Competitive - OpenStack",
+              "speaker": "NickB",
+              "group": "Group 4"
+          },
+          {
+              "start": "18:30",
+              "end": "19:30",
+              "title": "Sales Play #3",
+              "group": "Group 5"
+          },
+          {
+              "start": "18:30",
+              "end": "19:30",
+              "title": "Sales Play #2",
+              "group": "Group 6"
+          },
+          {
+              "start": "19:00",
+              "end": "19:30",
+              "speaker": "Andy Karandikar",
+              "group": "Group 1"
+          },
+          {
+              "start": "19:00",
+              "end": "19:30",
+              "title": "Competitive - OpenStack",
+              "speaker": "NickB",
+              "group": "Group 2"
+          },
+          {
+              "start": "19:00",
+              "end": "19:30",
+              "speaker": "Philippe Theriault",
+              "group": "Group 3"
+          },
+          {
+              "start": "19:00",
+              "end": "19:30",
+              "title": "Competitive - OpenShift",
+              "speaker": "JoeF",
+              "group": "Group 4"
+          },
+          {
+              "type": "break",
+              "start": "19:30",
+              "end": "20:00",
+              "title": "End of Sessions - Free time - Get ready for the Night Crawler!"
+          },
+          {
+              "type": "break",
+              "start": "20:00",
+              "end": "21:30",
+              "title": "Dinner followed by the Night Crawlers Challenge!"
+          }
+        ]
+      }
+    ],
+    "event-location": "Macau Hyatt",
+    "event-location-title": "Location",
+    "event-location-address": "Estrada do Istmo, Macau, China",
+    "event-location-details": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus.</p><p>Hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse.</p>",
+    "registration-title": "Register now",
+    "form-config": "var GatedFormConfig = { \"country\" : \"us\", \"showAdditionalFields\" : [], \"hideStandardFields\" : [\"Last Name\", \"Work Email\", \"Work Phone\", \"Company\"], \"CustomQuestions\" : [], \"language\" : \"en\", \"ThanksTitle\" : \"Thank You\", \"ShowThanksButton\" : \"true\", \/************************************************ Google Analytics *************************************************\/ GoogleAnalyticsID  :  \"UA-XXXXX-X\", \/************************************************ Google AdWords Conversion Tracking *************************************************\/ GoogleAdWordsConversionTracking  :  { \t\t\"id\"  :  \"991646916\", \t\t\"label\"  :  \"Sjx6CLyuoAkQxKnt2AM\" } }"
+  }
+}
+

@@ -1,0 +1,52 @@
+
+    <div id='GatedFormContainer'></div>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        
+        {{{form-config}}}
+        
+        window.DynamicFormConfig = GatedFormConfig;
+        
+        var form_js = document.createElement("script");
+        form_js.type = "text/javascript";
+        form_js.src = "//www.redhat.com/forms/scripts/jquery.gatedform.js";
+        document.getElementsByTagName("body")[0].appendChild(form_js);
+            
+        $("#GatedFormContainer").css("opacity", "0");
+        
+        var checkExist = setInterval(function() {
+          if ($('#C_FirstName').length) {
+            clearInterval(checkExist);
+            setTimeout(function () { initFormInteractions() }, 1500);
+          }
+        }, 100);
+        
+        function initFormInteractions () {
+          $("#GatedFormContainer").css("opacity", "1");
+          
+          $("select:not([multiple]) option:first-child").empty(); // Blank first option in all select inputs
+          $("select:not([multiple])").parent().addClass("dropdown-arrow");
+          $(".disabled").parent().css("opacity","0.75");
+          
+          blankFirstOption ();
+          
+        }
+      });
+      
+      function blankFirstOption () {
+        $("#C_Department1").change(function(){
+          $("#C_Job_Role11").parent().css("opacity","1").parent().css("opacity","1");
+          if ($.trim($("#C_Job_Role11").val()) == '') {
+            var label = $("#C_Job_Role11").parent().siblings().eq(0);
+            label.css("transform", "none");
+            label.css("color","#999");
+            label.css("font-weight","300");
+          }
+          $(".disabled").parent().css("opacity","0.75");
+          $("#C_Job_Role11 option:first-child").empty();
+          
+          blankFirstOption ();
+        });
+      }
+    </script>
+ 
