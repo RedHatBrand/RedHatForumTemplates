@@ -266,6 +266,7 @@ body {
     height: 100%;
     width: 100%;
     right: 100%;
+    background: yellow;
     top: 0;
     box-shadow: 15vw 0 25vw 0 currentColor; }
   .canvas-overlay:after {
@@ -274,6 +275,7 @@ body {
     height: 100%;
     width: 100%;
     left: 100%;
+    background: blue;
     top: 0;
     box-shadow: -15vw 0 25vw 0 currentColor; }
 
