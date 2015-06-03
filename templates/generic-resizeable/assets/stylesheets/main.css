@@ -259,25 +259,29 @@ body {
   background-repeat: no-repeat; }
 
 .canvas-overlay {
-  background: none; }
+  background: none;
+  -webkit-print-color-adjust: exact;
+  -webkit-filter: opacity(1); }
   .canvas-overlay:before {
     content: '';
     position: absolute;
     height: 100%;
-    width: 100%;
-    right: 100%;
+    left: 0;
     background: yellow;
     top: 0;
-    box-shadow: 15vw 0 25vw 0 currentColor; }
+    box-shadow: 0 0 35vw 10vw currentColor;
+    -webkit-print-color-adjust: exact;
+    -webkit-filter: opacity(1); }
   .canvas-overlay:after {
     content: '';
     position: absolute;
     height: 100%;
-    width: 100%;
-    left: 100%;
+    right: 0;
     background: blue;
     top: 0;
-    box-shadow: -15vw 0 25vw 0 currentColor; }
+    box-shadow: 0 0 35vw 10vw currentColor;
+    -webkit-print-color-adjust: exact;
+    -webkit-filter: opacity(1); }
 
 #content {
   max-width: none;
