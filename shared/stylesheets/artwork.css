@@ -1,9 +1,7 @@
 canvas {
   background: #3b0083;
   z-index: -100;
-  margin: 0;
-  max-width: 100%;
-  max-height: 100%; }
+  margin: 0; }
 
 .canvas-overlay {
   position: absolute;

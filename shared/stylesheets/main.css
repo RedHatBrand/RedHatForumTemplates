@@ -434,9 +434,7 @@ pre {
 canvas {
   background: #3b0083;
   z-index: -100;
-  margin: 0;
-  max-width: 100%;
-  max-height: 100%; }
+  margin: 0; }
 
 .canvas-overlay {
   position: absolute;
@@ -456,9 +454,6 @@ body {
   background-size: cover;
   position: relative;
   overflow: hidden; }
-
-img {
-  max-width: 100%; }
 
 h1 {
   font-size: 24vmin !important;

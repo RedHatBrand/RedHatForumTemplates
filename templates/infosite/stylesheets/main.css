@@ -117,8 +117,6 @@ section {
   background: #171717; }
   .hero > * {
     transition: all 0.3s ease-in-out; }
-  .hero img {
-    max-width: 100%; }
   @media screen and (min-width: 48em) {
     .hero:hover > * {
       opacity: 0.75; }
