@@ -1,34 +1,43 @@
 @import "../../../../../node_modules/red-hat-brand-typography/scss/red-hat-typography";   
 @import "../../../../../node_modules/red-hat-brand-palette/scss/red-hat-palette";
 
+html, body {
+  overflow: hidden;
+}
+
 body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 .canvas-overlay {
   background: none;
+  -webkit-print-color-adjust:exact;
+  -webkit-filter:opacity(1);
   
   &:before {
     content: '';
     position: absolute;
     height: 100%;
-    width: 100%;
-    right: 100%;
+    left: 0;
+    background: yellow;
     top: 0;
-    box-shadow: 15vw 0 25vw 0 currentColor;
+    box-shadow: 0 0 30vw 20vw currentColor;
+    -webkit-print-color-adjust:exact;
+    -webkit-filter:opacity(1);
   }
 
   &:after {
     content: '';
     position: absolute;
     height: 100%;
-    width: 100%;
-    left: 100%;
+    right: 0;
+    background: blue;
     top: 0;
-    box-shadow: -15vw 0 25vw 0 currentColor;
+    box-shadow: 0 0 30vw 20vw currentColor;
+    -webkit-print-color-adjust:exact;
+    -webkit-filter:opacity(1);
   }
 }
 
@@ -91,6 +100,7 @@ body {
   .bottom-left {
     width: 110vmin;
     top: 50%;
+    bottom: auto;
     transform: translateY(-50%);
     margin: 0;
     margin-left: 20vmin !important;
