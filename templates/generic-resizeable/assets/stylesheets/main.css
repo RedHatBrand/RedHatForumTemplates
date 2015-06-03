@@ -265,7 +265,7 @@ body {
     background-color: yellow;
     left: 0;
     top: 0;
-    box-shadow: 0 0 25vw 30vw currentColor; }
+    box-shadow: 0 0 25vw calc(30vw - 0.5px) currentColor; }
   .canvas-overlay:after {
     content: '';
     position: absolute;
@@ -273,7 +273,7 @@ body {
     background-color: blue;
     right: 0;
     top: 0;
-    box-shadow: 0 0 25vw 30vw currentColor; }
+    box-shadow: 0 0 25vw calc(30vw - 0.5px) currentColor; }
 
 #content {
   max-width: none;
