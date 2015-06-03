@@ -269,7 +269,7 @@ body {
     left: 0;
     background: yellow;
     top: 0;
-    box-shadow: 0 0 35vw 10vw currentColor;
+    box-shadow: 0 0 30vw 20vw currentColor;
     -webkit-print-color-adjust: exact;
     -webkit-filter: opacity(1); }
   .canvas-overlay:after {
@@ -279,7 +279,7 @@ body {
     right: 0;
     background: blue;
     top: 0;
-    box-shadow: 0 0 35vw 10vw currentColor;
+    box-shadow: 0 0 30vw 20vw currentColor;
     -webkit-print-color-adjust: exact;
     -webkit-filter: opacity(1); }
 
