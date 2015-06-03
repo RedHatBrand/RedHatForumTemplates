@@ -256,7 +256,12 @@ body {
   background-repeat: no-repeat; }
 
 .canvas-overlay {
-  background: radial-gradient(ellipse at center, transparent 0%, currentColor 80%); }
+  background: none;
+  height: 500%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  box-shadow: inset -30vw 0 30vw 0 currentColor, inset 30vw 0 30vw 0 currentColor; }
 
 #content {
   max-width: none;
