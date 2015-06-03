@@ -258,9 +258,6 @@ body {
 
 .canvas-overlay {
   background: none;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   box-shadow: inset -30vw 0 30vw 0 currentColor, inset 30vw 0 30vw 0 currentColor; }
 
 #content {
