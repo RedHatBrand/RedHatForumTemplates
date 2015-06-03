@@ -1100,8 +1100,12 @@ svg.leaflet-zoom-animated {
         top: 1rem;
         bottom: 1rem; } }
   .modal .modal-close {
+    cursor: pointer;
     position: absolute;
-    top: 1.6em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     right: 1.6em;
     margin: 0;
     font-size: 1em;
@@ -1573,6 +1577,14 @@ section:nth-child(even) .agenda-range-row > .container {
     margin-top: 1em; }
   .speaker-link:hover {
     color: #111111; }
+
+.speaker-avatar {
+  background-color: #D1D4D3; }
+  .speaker-avatar.blank {
+    background-image: url(../../../../assets/images/icons/blank-avatar.svg) !important;
+    background-size: 100% auto;
+    background-position: 50% 100%;
+    background-repeat: no-repeat; }
 
 body.noscroll {
   overflow: hidden; }
