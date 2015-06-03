@@ -250,26 +250,90 @@ pre {
   color: white;
   background-color: dimgrey; }
 
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+
+.canvas-overlay {
+  background: none; }
+  .canvas-overlay:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 100%;
+    top: 0;
+    box-shadow: 15vw 0 25vw 0 currentColor; }
+  .canvas-overlay:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+    top: 0;
+    box-shadow: -15vw 0 25vw 0 currentColor; }
+
 #content {
   max-width: none;
-  width: calc(100vw - 10vmin);
-  left: 0;
-  top: 0;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none; }
-  #content #logo-forum {
-    margin-left: 2vmin;
-    width: 30vmin;
-    text-align: left; }
-
-h1 {
-  font-size: 300% !important;
-  margin-top: 1.5rem !important;
+  width: 75vw;
   text-align: center; }
+  #content .content-title {
+    font-size: 8vmin !important;
+    line-height: 1.2em !important;
+    margin-bottom: 0.4em; }
+    @media all and (min-aspect-ratio: 4/1) {
+      #content .content-title {
+        font-size: 14vmin !important; } }
+  #content .content-text {
+    font-size: 6vmin !important;
+    line-height: 1.2em; }
+    @media all and (min-aspect-ratio: 4/1) {
+      #content .content-text {
+        font-size: 8vmin !important; } }
 
-h4 {
-  font-size: 200% !important;
-  padding-top: 1.5rem;
-  margin-bottom: 1rem;
-  text-align: center; }
+.bottom-right, .bottom-left {
+  max-width: 30vw;
+  width: 60vh;
+  margin: 7vmin; }
+  .bottom-right *, .bottom-left * {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle; }
+  .bottom-right #logo-forum, .bottom-left #logo-forum {
+    margin-bottom: -1vmin;
+    -webkit-transform: scale(1.1) !important;
+    -ms-transform: scale(1.1) !important;
+    transform: scale(1.1) !important; }
+
+@media all and (min-aspect-ratio: 4/1) {
+  #content {
+    width: 40vw;
+    text-align: left;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 130vmin;
+    margin-left: 2em;
+    padding-left: 2em;
+    border-left: 0.2em solid white; }
+
+  .bottom-left {
+    width: 110vmin;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+    margin-left: 20vmin !important; }
+
+  .bottom-right {
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+    margin-right: 20vmin !important; }
+ }
