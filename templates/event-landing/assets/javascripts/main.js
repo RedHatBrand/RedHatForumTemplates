@@ -39,7 +39,18 @@ $(function () {
   });
 
   function initCountdown (date) {
-    var parsedDate = moment(date, ['D/M/YYYY', 'D/M/YY', 'D MMMM YYYY', 'D MMM YY', 'MMMM D YY', 'MMM D YY'])
+    var parsedDate = moment(date, [
+        'D/M/YYYY',
+        'D/M/YY',
+        'D MMMM YYYY',
+        'D MMMM YY',
+        'D MMM YYYY',
+        'D MMM YY',
+        'MMMM D YYYY',
+        'MMMM D YY',
+        'MMM D YYYY',
+        'MMM D YY'
+    ])
     var now = parseInt(Date.now() / 1000)
 
     if (!parsedDate.isValid()) { return }
