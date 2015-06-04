@@ -39,10 +39,14 @@ $(function () {
   });
 
   function initCountdown (date) {
-    var parsedDate = moment(date, ['D/M/YYYY', 'D/M/YY', 'D MMM YYYY', 'D MMM YY', 'MMMM D YY', 'MMM D YY'])
+    var parsedDate = moment(date, ['D/M/YYYY', 'D/M/YY', 'D MMMM YYYY', 'D MMM YY', 'MMMM D YY', 'MMM D YY'])
+    var now = parseInt(Date.now() / 1000)
+
     if (!parsedDate.isValid()) { return }
 
-    var timeUntil = parsedDate.format('X') - parseInt(Date.now() / 1000)
+    var timeUntil = parsedDate.format('X') - now
+
+    if (timeUntil < 0) { return }
 
     $('#countdown').FlipClock(timeUntil, {
       clockFace: 'DailyCounter',
