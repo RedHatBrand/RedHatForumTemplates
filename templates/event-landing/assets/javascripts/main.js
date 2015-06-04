@@ -38,14 +38,21 @@ $(function () {
     }
   });
 
-  var date = countdownSettings.date
-  var timeUntil = moment(date, ['D/M/YY', 'D/M/YYYY', 'D MMM YY', 'D MMM YYYY', 'MMM D YY', 'MMMM D YY']).format('X') - parseInt(Date.now() / 1000)
+  function initCountdown (date) {
+    var timeUntil = moment(date, ['D/M/YY', 'D/M/YYYY', 'D MMM YY', 'D MMM YYYY', 'MMM D YY', 'MMMM D YY']).format('X') - parseInt(Date.now() / 1000)
 
-  $('#countdown').FlipClock(timeUntil, {
-    clockFace: 'DailyCounter',
-    clockFaceOptions: {
-      autoPlay: false
-    },
-    countdown: true
-  });
+    $('#countdown').FlipClock(timeUntil, {
+      clockFace: 'DailyCounter',
+      clockFaceOptions: {
+        autoPlay: false
+      },
+      countdown: true
+    })
+  }
+
+  var date = countdownSettings.date
+
+  if (date) {
+    initCountdown(date)
+  }
 });
