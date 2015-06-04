@@ -39,7 +39,7 @@ $(function () {
   });
 
   function initCountdown (date) {
-    var parsedDate = moment(date, ['D/M/YY', 'D/M/YYYY', 'D MMM YY', 'D MMM YYYY', 'MMM D YY', 'MMMM D YY'])
+    var parsedDate = moment(date, ['D/M/YYYY', 'D/M/YY', 'D MMM YYYY', 'D MMM YY', 'MMMM D YY', 'MMM D YY'])
     if (!parsedDate.isValid()) { return }
 
     var timeUntil = parsedDate.format('X') - parseInt(Date.now() / 1000)
