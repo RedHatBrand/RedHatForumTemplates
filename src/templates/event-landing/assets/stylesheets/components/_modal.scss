@@ -52,7 +52,6 @@
     }
   }
 
-
   .modal-header {
     h1, h2, h3, h4, h5, h6 { margin: 0; }
     padding: $line-height;
@@ -91,8 +90,5 @@
   }
 }
 
-.modal-overlay {
-  transition: opacity 0.2s ease;
-  opacity: 0;
-}
+.modal-overlay { opacity: 0; }
 .modal-overlay.open { opacity: 1; }

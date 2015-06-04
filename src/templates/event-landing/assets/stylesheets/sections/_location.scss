@@ -2,8 +2,13 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 0.5px;
   bottom: 0;
+  z-index: 1;
+}
+
+#location {
+  min-height: 16em;
 
   &:after {
     content: "";
@@ -13,10 +18,9 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(255,255,255, 0.95);
+    z-index: 2;
   }
-}
 
-#location {
-  color: white;
+  .container { z-index: 3; }
 }

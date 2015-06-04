@@ -1,11 +1,16 @@
 .hero-wrapper {
   background-color: $color-rh-purple;
   overflow: hidden;
+
+  .logo-pair-lockup {
+    font-size: 1.25em;
+  }
 }
 
 .hero-text {
   font-size: 1.5em;
   margin-bottom: 1em;
+  text-shadow: 0 0 0.1em;
 
   h1 {
     margin-top: 0.5em;
@@ -17,13 +22,25 @@
   }
 }
 
-.hero ul.nav {
-  margin-top: 1.5em;
-}
+.hero-countdown         { margin-top: 3em; }
+.hero .flip-clock-label { color: $color-rh-white; }
+.hero ul.nav            { margin-top: 1.5em; }
 
 #artwork-canvas {
   position:absolute;
   top: 0;
   left: 0;
   background-color: $color-rh-purple;
+  background-image: radial-gradient(ellipse at center, $color-rh-purple 0%, darken($color-rh-purple, 10%) 54%, darken($color-rh-purple, 20%) 100%);
+}
+
+.theme-red {
+  .hero-wrapper {
+    background-color: $color-rh-red;
+  }
+
+  #artwork-canvas {
+    background-color: $color-rh-red;
+    background-image: radial-gradient(ellipse at center, $color-rh-red 0%, darken($color-rh-red, 10%) 54%, darken($color-rh-red, 20%) 100%);
+  }
 }

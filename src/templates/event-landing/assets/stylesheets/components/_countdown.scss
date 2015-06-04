@@ -1,0 +1,10 @@
+#countdown {
+  margin: 0;
+
+  ul li { padding-left: 0; }
+  ul li:before { content: ''; }
+}
+.flip-clock-wrapper ul li a div .shadow { z-index: 5 }
+.flip-clock-wrapper ul li a div .inn { z-index: 6 }
+
+#countdown * + * { margin-top: 0; }
