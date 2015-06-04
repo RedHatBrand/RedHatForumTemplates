@@ -13,16 +13,13 @@
 
     a {
       padding: 0.25em 0.5em 0;
-      text-transform: uppercase;
+      text-transform: capitalize;
       text-decoration: none;
       display: block;
-      font-weight: 600;
-
+      font-weight: 500;
+      font-size: 1em;
       line-height: 3.5em;
       color: white;
-
-
-
 
       &.button {
         padding: 0.25em 0.75em 0;
