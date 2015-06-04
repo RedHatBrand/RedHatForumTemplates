@@ -4,8 +4,6 @@ $(function () {
     unburger()
     $('.mobilenav').removeClass('menu-show');
     $('.nav-toggle').removeClass('active');
-    $('.nav-menu li').removeClass('active');
-    $(this).closest('li').addClass('active');
     target = $(this).attr('href');
     $.smoothScroll({
       scrollTarget: target,
@@ -38,5 +36,16 @@ $(function () {
     if (e.keyCode == 27) {
       unburger()
     }
+  });
+
+  var date = countdownSettings.date
+  var timeUntil = moment(date, ['D/M/YY', 'D/M/YYYY', 'D MMM YY', 'D MMM YYYY', 'MMM D YY', 'MMMM D YY']).format('X') - parseInt(Date.now() / 1000)
+
+  $('#countdown').FlipClock(timeUntil, {
+    clockFace: 'DailyCounter',
+    clockFaceOptions: {
+      autoPlay: false
+    },
+    countdown: true
   });
 });

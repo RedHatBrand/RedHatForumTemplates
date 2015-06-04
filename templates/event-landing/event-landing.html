@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="//redhatbrand.github.io/RedHatForumTemplates/templates/event-landing/assets/stylesheets/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+  <script src="//redhatbrand.github.io/RedHatForumTemplates/templates/event-landing/assets/javascripts/flipclock.min.js" type="text/javascript"></script>
   <script src='//redhatbrand.github.io/RedHatForumTemplates/templates/event-landing/assets/javascripts/leaflet.js'></script>
   <script src="//redhatbrand.github.io/RedHatForumTemplates/templates/event-landing/assets/javascripts/moment.js" type="text/javascript"></script>
   <script src="//redhatbrand.github.io/RedHatForumTemplates/templates/event-landing/assets/javascripts/bs-scrollspy.js" type="text/javascript"></script>
   <script src="//redhatbrand.github.io/RedHatForumTemplates/templates/event-landing/assets/javascripts/jquery.smoothscroll.js" type="text/javascript"></script>
   <script src="//redhatbrand.github.io/RedHatForumTemplates/assets/javascripts/main.js" type="text/javascript"></script>
-  <script src="//redhatbrand.github.io/RedHatForumTemplates/templates/event-landing/assets/javascripts/main.js" type="text/javascript"></script>
   <script src="//redhatbrand.github.io/RedHatForumTemplates/templates/event-landing/assets/javascripts/modal.js" type="text/javascript"></script>
   <script src="//redhatbrand.github.io/RedHatForumTemplates/templates/event-landing/assets/javascripts/agenda.js" type="text/javascript"></script>
 
@@ -19,9 +19,15 @@
     window.mapSettings = {
       zoom: '{{map-scale}}' || 12,
       address: '{{event-location-address}}'
-    };
+    }
   </script>
   <script src="//redhatbrand.github.io/RedHatForumTemplates/templates/event-landing/assets/javascripts/map.js" type="text/javascript"></script>
+  <script>
+    window.countdownSettings = {
+      date: '{{{date}}}'
+    }
+  </script>
+  <script src="//redhatbrand.github.io/RedHatForumTemplates/templates/event-landing/assets/javascripts/main.js" type="text/javascript"></script>
   <title>{{title}}</title>
 
   <style>
@@ -36,7 +42,7 @@
   </style>
 </head>
 
-<body class="small-event" data-spy="scroll" data-offset="100">
+<body class="small-event theme-red" data-spy="scroll" data-offset="100">
   <div id="main-nav-fixed" class="nav-fixed-top">
     <div class="container">
       <div class="logo-pair-lockup">
@@ -125,6 +131,10 @@
         {{/call-to-action-link}}
         {{/form-config-script}}
         {{/call-to-action}}
+      </div>
+
+      <div class="container hero-countdown">
+        <div id="countdown"></div>
       </div>
     </div>
   </header>
