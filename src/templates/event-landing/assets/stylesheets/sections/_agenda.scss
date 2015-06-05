@@ -71,6 +71,14 @@
     h1, h2, h3, h4, h5, h6 {
       text-transform: none;
     }
+
+    a, a:visited {
+      color: $color-rh-black;
+    }
+
+    a:hover {
+      color: darken($color-rh-grey, 10%);
+    }
   }
 
   .agenda-session-header-text {
