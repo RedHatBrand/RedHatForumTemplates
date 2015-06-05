@@ -64,7 +64,8 @@
               "end": "19:30",
               "location": "Location TBC",
               "title": "Welcome Reception",
-              "speaker": "Dirk-Peter van Leeuwen"
+              "speaker": "Dirk-Peter van Leeuwen",
+              "speaker-slug": "dirk-peter-van-leeuwen"
           }
         ]
       },
