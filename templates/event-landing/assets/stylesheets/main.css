@@ -1795,6 +1795,10 @@ body > section#agenda {
   margin: 0; }
   .agenda-container .agenda-session h1, .agenda-container .agenda-session h2, .agenda-container .agenda-session h3, .agenda-container .agenda-session h4, .agenda-container .agenda-session h5, .agenda-container .agenda-session h6 {
     text-transform: none; }
+  .agenda-container .agenda-session a, .agenda-container .agenda-session a:visited {
+    color: #111111; }
+  .agenda-container .agenda-session a:hover {
+    color: #b7bbba; }
 .agenda-container .agenda-session-header-text {
   margin: 0; }
 .agenda-container .agenda-session-content {
