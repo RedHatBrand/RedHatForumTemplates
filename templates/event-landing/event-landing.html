@@ -248,7 +248,18 @@
               <h3 class="agenda-session-header-text">{{title}}</h3>
               {{/title}}
               {{#speaker}}
+              {{#speaker-slug}}
+              <a
+                data-target-modal="{{speaker-slug}}"
+                href="#{{speaker-slug}}" class="modal-open">
+                <h3 class="agenda-session-header-speaker">
+                  {{speaker}}
+                </h3>
+              </a>
+              {{/speaker-slug}}
+              {{^speaker-slug}}
               <h3 class="agenda-session-header-speaker">{{speaker}}</h3>
+              {{/speaker-slug}}
               {{/speaker}}
             </header>
 

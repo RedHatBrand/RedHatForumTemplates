@@ -14,7 +14,7 @@ $(function modalToggle() {
       $('body').addClass("noscroll");
     }
 
-    $modalButton.on('click', openModal);
+    $(document).on('click', '.modal-open', openModal);
 
     function closeModal () {
       $modal.removeClass('open');
@@ -22,10 +22,10 @@ $(function modalToggle() {
       $('body').removeClass("noscroll");
     }
 
-    $modalClose.on('click', closeModal);
-    $modalCancel.on('click', closeModal);
+    $(document).on('click', '.modal-close', closeModal);
+    $(document).on('click', '.modal-cancel', closeModal);
+    $(document).on('click', '.modal-submit', closeModal);
     $overLay.on('click', closeModal);
-    $modalSubmit.on('click', closeModal);
 
     $(document).keyup(function(e) {
       if (e.keyCode == 27) {
