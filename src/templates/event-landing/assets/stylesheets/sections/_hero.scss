@@ -17,12 +17,16 @@
     line-height: 1em;
   }
 
-  &.container {
-    padding: 0 1.5em;
-  }
+  &.container { padding: 0 0.8em; }
 }
 
-.hero-countdown         { margin-top: 3em; }
+.hero-countdown         {
+  margin-top: 5em;
+
+  .flip-clock-wrapper {
+    font-size: 0.5em;
+  }
+}
 .hero .flip-clock-label { color: $color-rh-white; }
 .hero ul.nav            { margin-top: 1.5em; }
 
@@ -43,4 +47,9 @@
     background-color: $color-rh-red;
     background-image: radial-gradient(ellipse at center, $color-rh-red 0%, darken($color-rh-red, 10%) 54%, darken($color-rh-red, 20%) 100%);
   }
+}
+
+@media screen and (min-width: $max-width) {
+  .hero-countdown .flip-clock-wrapper { font-size: 1em }
+  .herp-text.container { padding: 0 1.5em; }
 }
