@@ -62,9 +62,9 @@ $(function () {
     $('#countdown').FlipClock(timeUntil, {
       clockFace: 'DailyCounter',
       clockFaceOptions: {
-        autoPlay: false
+        autoPlay: false,
+        countdown: true
       },
-      countdown: true
     })
   }
 
