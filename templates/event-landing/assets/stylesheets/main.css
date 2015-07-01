@@ -1422,6 +1422,8 @@ header[role="banner"] {
       padding-bottom: 0;
       background-color: transparent;
       font-size: 80%; }
+      #main-nav-fixed nav a {
+        padding-bottom: 1em; }
  }
 
 body > section {
