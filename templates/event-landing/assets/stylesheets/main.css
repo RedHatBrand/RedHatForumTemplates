@@ -1420,7 +1420,8 @@ header[role="banner"] {
       padding-left: 0;
       padding-right: 0;
       padding-bottom: 0;
-      background-color: transparent; }
+      background-color: transparent;
+      font-size: 80%; }
  }
 
 body > section {
