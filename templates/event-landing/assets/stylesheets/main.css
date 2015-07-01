@@ -1400,8 +1400,7 @@ header[role="banner"] {
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
-    background-color: rgba(0, 0, 0, 0.95);
-    width: auto; }
+    background-color: rgba(0, 0, 0, 0.95); }
 
 #main-nav-fixed nav.menu-show {
   display: block; }
@@ -1421,7 +1420,6 @@ header[role="banner"] {
       padding-left: 0;
       padding-right: 0;
       padding-bottom: 0;
-      width: 200px;
       background-color: transparent; }
  }
 
