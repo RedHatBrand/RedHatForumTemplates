@@ -1380,6 +1380,7 @@ header[role="banner"] {
   left: 0;
   right: 0;
   height: 3.75em;
+  white-space: nowrap;
   background-color: rgba(0, 0, 0, 0.8);
   margin: 0; }
   #main-nav-fixed .logo-rh, #main-nav-fixed .logo-event {
