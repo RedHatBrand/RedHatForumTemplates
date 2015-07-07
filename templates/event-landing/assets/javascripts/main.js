@@ -38,7 +38,7 @@ $(function () {
     }
   });
 
-  function initCountdown (date) {
+  function initCountdown (date, lang) {
     var parsedDate = moment(date, [
         'D/M/YYYY',
         'D/M/YY',
@@ -63,14 +63,16 @@ $(function () {
       clockFace: 'DailyCounter',
       clockFaceOptions: {
         autoPlay: false,
-        countdown: true
+        countdown: true,
+        language: lang
       },
     })
   }
 
   var date = countdownSettings.date
+  var lang = countdownSettings.lang
 
   if (date) {
-    initCountdown(date)
+    initCountdown(date, lang)
   }
 });
