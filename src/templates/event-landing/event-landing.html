@@ -97,24 +97,6 @@ height: calc(100vh - 2em);
             <div class="logo-rh"></div>
           </div>
 
-          <div class="hero-text">
-            <h1>{{{hero-heading}}}</h1>
-
-            {{#call-to-action}}
-            {{#call-to-action-link}}
-            <a href="{{{call-to-action-link}}}" class="button menu-link">{{call-to-action}}</a>
-            {{/call-to-action-link}}
-            {{/call-to-action}}
-
-            {{#call-to-action}}
-            {{#form-config-script}}
-            {{^call-to-action-link}}
-            <a href="#form" class="button menu-link">{{call-to-action}}</a>
-            {{/call-to-action-link}}
-            {{/form-config-script}}
-            {{/call-to-action}}
-          </div>
-
           <nav class="nav-menu">
             <ul class="nav">
               {{#body-sections}}
@@ -136,15 +118,31 @@ height: calc(100vh - 2em);
           </nav>
         </div>
       </div>
+
+      <div class="container hero-text">
+        <h1>{{{hero-heading}}}</h1>
+        <h2>{{date}}</h2>
+
+        {{#call-to-action}}
+        {{#call-to-action-link}}
+        <a href="{{{call-to-action-link}}}" class="button menu-link">{{call-to-action}}</a>
+        {{/call-to-action-link}}
+        {{/call-to-action}}
+
+        {{#call-to-action}}
+        {{#form-config-script}}
+        {{^call-to-action-link}}
+        <a href="#form" class="button menu-link">{{call-to-action}}</a>
+        {{/call-to-action-link}}
+        {{/form-config-script}}
+        {{/call-to-action}}
+      </div>
+
+      <div class="container hero-countdown">
+        <div id="countdown"></div>
+      </div>
     </div>
   </header>
-
-  <section class="countdown-section">
-    <div class="container hero-countdown">
-      <h1>{{date}}</h1>
-      <div id="countdown"></div>
-    </div>
-  </section>
 
   {{^landing-page-sections}}
   {{#body-sections}}

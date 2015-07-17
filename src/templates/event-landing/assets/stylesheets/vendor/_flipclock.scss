@@ -118,7 +118,12 @@
   width: 100%;
   height: 200%;
   color: $color-rh-white;
-  text-align: center; }
+  text-align: center;
+  background-color: darken($color-rh-purple, 20%);  }
+
+.theme-red .flip-clock-wrapper ul li a div div.inn {
+  background-color: darken($color-rh-red, 20%);
+}
 
 .flip-clock-wrapper ul li a div.up div.inn {
   top: 0; }

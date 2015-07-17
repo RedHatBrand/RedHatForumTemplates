@@ -3,13 +3,12 @@
   "data": {
     "lang": "ko",
     "hero-heading":  "Headline. Tagline. Here.",
-    "date": "29 August 2015",
+    "date": "7 June 2015",
     "event-region": "apac",
     "event-city": "singapore",
     "footer": "<p>this is my footer, there are many like it <br> but this one is mine</p>",
     "background-darken-amount": "0.10",
     "call-to-action": "Register now",
-    "call-to-action-link": "#",
     "body-sections": [
       {
         "link-text": "Phasellus Molestie",
