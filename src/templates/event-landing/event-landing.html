@@ -121,25 +121,25 @@ height: calc(100vh - 2em);
 
       <div class="container hero-text">
         <h1>{{{hero-heading}}}</h1>
-        <h2>{{date}}</h2>
 
-        {{#call-to-action}}
-        {{#call-to-action-link}}
-        <a href="{{{call-to-action-link}}}" class="button menu-link">{{call-to-action}}</a>
-        {{/call-to-action-link}}
-        {{/call-to-action}}
+        <div class="hero-date">
+          <h2 class="hero-date-text">{{date}}</h2>
+          <div id="countdown" class="hero-date-countdown"></div>
 
-        {{#call-to-action}}
-        {{#form-config-script}}
-        {{^call-to-action-link}}
-        <a href="#form" class="button menu-link">{{call-to-action}}</a>
-        {{/call-to-action-link}}
-        {{/form-config-script}}
-        {{/call-to-action}}
-      </div>
+          {{#call-to-action}}
+          {{#call-to-action-link}}
+          <a href="{{{call-to-action-link}}}" class="button menu-link">{{call-to-action}}</a>
+          {{/call-to-action-link}}
+          {{/call-to-action}}
 
-      <div class="container hero-countdown">
-        <div id="countdown"></div>
+          {{#call-to-action}}
+          {{#form-config-script}}
+          {{^call-to-action-link}}
+          <a href="#form" class="button menu-link">{{call-to-action}}</a>
+          {{/call-to-action-link}}
+          {{/form-config-script}}
+          {{/call-to-action}}
+        </div>
       </div>
     </div>
   </header>

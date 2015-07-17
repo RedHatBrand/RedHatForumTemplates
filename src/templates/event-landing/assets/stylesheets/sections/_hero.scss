@@ -1,3 +1,5 @@
+.hero { margin-top: 0; }
+
 .hero-wrapper {
   background-color: $color-rh-purple;
   overflow: hidden;
@@ -9,7 +11,6 @@
 
 .hero-text {
   font-size: 1.5em;
-  margin-bottom: 1em;
   text-shadow: 0 0 0.1em;
 
   h1 {
@@ -20,15 +21,21 @@
   &.container { padding: 0 0.8em; }
 }
 
-.hero-countdown         {
-  margin-top: 5em;
-
-  .flip-clock-wrapper {
-    font-size: 0.5em;
-  }
+.hero-date-text {
+  margin-bottom: 0;
+  line-height: 1em;
 }
-.hero .flip-clock-label { color: $color-rh-white; }
-.hero ul.nav            { margin-top: 1.5em; }
+
+.hero .flip-clock-wrapper {
+  font-size: 7.5px;
+  padding-top: 3em;
+}
+.hero .flip-clock-label {
+  color: $color-rh-white;
+  text-transform: uppercase;
+  top: -3em;
+}
+.hero ul.nav { margin-top: 1.5em; }
 
 #artwork-canvas {
   position:absolute;
@@ -49,7 +56,15 @@
   }
 }
 
+
+.hero a.button {
+  border: thin solid $color-rh-white;
+  &:hover {
+    background-color: darken($color-rh-red, 10%);
+  }
+}
+
 @media screen and (min-width: $max-width) {
-  .hero-countdown .flip-clock-wrapper { font-size: 1em }
+  .hero .flip-clock-wrapper { font-size: 0.5em }
   .hero-text.container { padding: 0 1.5em; }
 }
